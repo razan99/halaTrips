@@ -213,7 +213,7 @@
      */
 }
  .spe-title h2 span {
-     color: #2c8be0;
+     color: #e67e22;
      font-size: 44px;
      font-weight: 600;
      font-family: 'raleway', sans-serif;;
@@ -654,8 +654,28 @@
      box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.09);
      margin-bottom: 30px;
 }
+.to-ho-hotel-con.package .time {
+    position: absolute;
+    top: 15px;
+    background: #d35400;
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    left: 15px;
+}
+.to-ho-hotel-con.package .time span{
+    font-size: 13px;
+ 
+}
+.to-ho-hotel-con.package h4{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
  .to-ho-hotel-con-1 {
      position: relative;
+     height: 200px;
 }
  .to-ho-hotel-con-1:before {
      content: '';
@@ -668,6 +688,8 @@
 }
  .to-ho-hotel-con-1 img {
      width: 100%;
+     height: 100%;
+     object-fit: cover;
 }
  .to-ho-hotel-con-23 {
      position: relative;
@@ -728,7 +750,7 @@
  .ho-hot-pri {
      font-size: 38px;
      font-weight: 600;
-     color: #f4364f;
+     color: #e67e22;
      float: right;
 }
  .ho-hot-pri-dis {
@@ -1644,8 +1666,8 @@
      -ms-transition: all 0.5s ease;
      -o-transition: all 0.5s ease;
      font-weight: 700;
-     background: #f4364f;
-     background: linear-gradient(to bottom,#f4364f,#dc2039);
+     background: #e67e22;
+     background: linear-gradient(to bottom,#e67e22,#e67e22);
 }
  .disco a:hover {
      background: #D46600;
@@ -1982,7 +2004,7 @@
      -moz-transition: all 0.5s ease;
      -ms-transition: all 0.5s ease;
      -o-transition: all 0.5s ease;
-     background: #2c8be0;
+     background: #e67e22;
 }
  .dl1 {
 }
@@ -3583,7 +3605,7 @@
  .hot-list-p3-2 {
      font-size: 32px;
      font-weight: 600;
-     color: #f4364f;
+     color: #e67e22;
      padding: 10px 0px;
 }
  .hot-list-p3-3 {
@@ -3781,7 +3803,7 @@
      width: 32px;
      height: 32px;
      position: absolute;
-     background-color: #f4364fba;
+     background-color: #e67e22ba;
     /* bottom: 8px;
      */
      padding: 4px;
@@ -4207,6 +4229,18 @@
      position: relative;
      background-size: cover;
 }
+.tourz-search video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tourz-search  .overlay{
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+}
  .tourz-search {
 }
  .tourz-search-form {
@@ -4249,6 +4283,7 @@
  .tourz-search-1 h1 {
      color: #fff;
      font-size: 50px;
+     margin-bottom: 50px;
 }
  .tourz-search-1 p {
      font-size: 18px;
@@ -4294,8 +4329,8 @@
  .tourz-sear-btn {
      height: 45px;
      line-height: 45px;
-     background: #f4364f;
-     background: linear-gradient(to bottom,#f4364f,#dc2039);
+     background: #e67e22;
+     background: linear-gradient(to bottom,#e67e22,#e67e22);
      outline: none;
      font-size: 16px;
      display: block !important;
@@ -4344,9 +4379,9 @@
  .tourz-hom-ser ul li a:hover {
      -webkit-transform: scale(1.1);
      transform: scale(1.1);
-     background: #f4364f;
-     background: linear-gradient(to bottom,#f4364f,#dc2039);
-     border: 1px solid #d41e36;
+     background: #e67e22;
+     background: linear-gradient(to bottom,#e67e22,#e67e22);
+     border: 1px solid #e67e22;
 }
  .tourz-hom-ser ul li a img {
      display: table;
@@ -6188,7 +6223,7 @@
      margin-top: 15px;
 }
  .log-in-btn {
-     background: #f4364f;
+     background: #e67e22;
      color: #fff;
      padding: 2px 10px;
      font-weight: 600;
@@ -7381,8 +7416,8 @@
      font-size: 12px;
 }
  .ed-com-t1-right ul li:nth-child(1) a{
-     background: #f4364f;
-     background: linear-gradient(to bottom,#f4364f,#dc2039);
+     background: #e67e22;
+     background: linear-gradient(to bottom,#e67e22,#e67e22);
 }
  .ed-com-t1-right ul li:nth-child(2) a{
      background: #2d5d73;
@@ -7452,7 +7487,7 @@
      */
 }
  .ol-2 {
-     background: #f4364f;
+     background: #e67e22;
      padding: 5px 3px 3px 3px;
      position: relative;
     /* top: -18px;
@@ -7516,7 +7551,7 @@
      width: 60px;
      height: 60px;
      vertical-align: sub;
-     background: #f4364f;
+     background: #e67e22;
     /* border: 1px solid #a59d9d;
      */
 }
@@ -7560,7 +7595,7 @@
      font-size: 45px;
      display: block;
      text-transform: capitalize;
-     color: #f4364f;
+     color: #e67e22;
      font-weight: 600;
      font-family: 'raleway', sans-serif;;
 }
@@ -7582,7 +7617,7 @@
      text-transform: uppercase;
      width: 300px;
      height: 300px;
-     background: #f4364f;
+     background: #e67e22;
      border-radius: 50%;
      padding: 50px;
      text-align: center;
@@ -7694,7 +7729,7 @@
      font-size: 18px;
 }
  .slid-cap a {
-     background: #f4364f;
+     background: #e67e22;
      padding: 7px 25px;
      color: #fff;
      text-transform: uppercase;
@@ -7867,7 +7902,7 @@
  .trav-list-bod{
 }
  .trav-list-bod a h3{
-     color: #f4364f;
+     color: #e67e22;
 }
  .trav-list-bod p{
      font-size: 13px;
