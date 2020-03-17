@@ -1498,7 +1498,7 @@
  .foot-spec {
 }
  .foot-spec span {
-     color:#ff0009;
+     color:#e67f31;
      text-transform: uppercase;
      font-family: 'raleway', sans-serif;;
      font-weight: 700;
@@ -1684,7 +1684,7 @@
  .footer_places {
 }
  .footer_places h4 {
-     color: #acadaf;
+     color: #ffffff;
      margin-top: 0px;
      padding-bottom: 15px;
      text-transform: uppercase;
@@ -7514,7 +7514,7 @@
      margin-bottom: 30px;
 }
  .ol-4 {
-     font-size: 47px;
+     font-size: 30px;
      color: #fff;
      font-weight: 600;
      font-family: 'raleway', sans-serif;;
