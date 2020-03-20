@@ -4,9 +4,11 @@
 /* 1.COMMON CSS 
 /*-------------------------------------------------------*/
  body {
-     font-family: 'raleway', sans-serif;;
+     
      font-size: 14px;
      color: #727070;
+     font-family: 'Quicksand', sans-serif;
+
 }
  a {
      text-decoration: none;
@@ -28,11 +30,11 @@
  a, p, li, td, span {
      font-size: 14.5px;
      line-height: 24px;
-     font-family: 'raleway', sans-serif;;
+     
      font-weight: 400;
 }
  h1, h2, h3, h4, h5, th {
-     font-family: 'raleway', sans-serif;;
+     
      font-weight: 700;
 }
  .link-btn {
@@ -42,7 +44,7 @@
      padding: 6px 15px;
      border-radius: 2px;
      display: inline-block;
-     font-family: 'raleway', sans-serif;;
+     
      text-decoration: none;
      display: inline-block;
      cursor: pointer;
@@ -163,7 +165,7 @@
      font-size: 13px;
      font-weight: 600;
      text-decoration: none;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .head_right ul li:first-child a {
      padding-right: 7px;
@@ -216,7 +218,7 @@
      color: #e67e22;
      font-size: 44px;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .spe-title p {
      margin-bottom: 0px;
@@ -224,7 +226,7 @@
      font-weight: 400;
      padding-top: 12px;
      color: #000;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .spe-title-1 {
 }
@@ -273,12 +275,12 @@
  .nav > li > a {
      font-weight: 600;
      font-size: 14px;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .dropdown-menu > li > a {
      font-weight: 500;
      font-size: 14px;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .menu_book a {
      font-weight: 700;
@@ -289,7 +291,7 @@
      display: inline-block;
      background: #1aa5d8;
      background: linear-gradient(to bottom, #1aa5d8, #1386b1);
-     font-family: 'raleway', sans-serif;;
+     
 }
  .menu_book a:hover {
      color: #fff;
@@ -332,7 +334,7 @@
      float: right;
 }
  .slider-cap {
-     font-family: 'Montserrat', sans-serif;
+     
 }
  .slider-cap h1 {
      font-size: 40px;
@@ -499,7 +501,7 @@
  .b_pack h4 a {
      color: #000000;
      text-decoration: none;
-     font-family: 'raleway', sans-serif;;
+     
      font-weight: 600;
 }
  .v_pl_name {
@@ -669,9 +671,68 @@
  
 }
 .to-ho-hotel-con.package h4{
-    font-size: 30px;
+    font-size: 24px;
+    margin-bottom: 0;
+    color: #42495b;
+}
+.to-ho-hotel-con.package p{
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 30px;
+    color: #9a9a9a;
+    margin-bottom: 15px;
+}
+.to-ho-hotel-con.package ul li{
+margin-bottom: 15px;
+display: flex;
+align-items: flex-start;
+
+}
+.to-ho-hotel-con.package ul li i{
+    color: #e67e22;
+    font-size: 18px;
+    width: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.to-ho-hotel-con.package ul li span{
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 30px;
+    color: #9a9a9a;
+    margin-bottom: 15px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.package-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.package-bottom .ho-hot-pri {
+    font-size: 38px;
+    font-weight: 600;
+    color: #e67e22;
+    float: none;
+}
+.package-bottom .ho-hot-pri-dis{
+    display: inline-block;
+    text-decoration: line-through;
+}
+.package-bottom a{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
     text-align: center;
-    margin-bottom: 20px;
+    background-color: #00bcb3;
+    border: 1px solid #00bcb3;
+    margin-right: 20px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    
+    font-weight: 600
 }
  .to-ho-hotel-con-1 {
      position: relative;
@@ -680,7 +741,7 @@
  .to-ho-hotel-con-1:before {
      content: '';
      position: absolute;
-     background: linear-gradient(to top, rgba(0, 0, 0, 0.72) 14%, rgba(0, 0, 0, 0.08) 35%);
+     background: rgba(0, 0, 0, 0.43);
      top: 0px;
      bottom: 0px;
      left: 0px;
@@ -695,6 +756,7 @@
      position: relative;
      overflow: hidden;
      padding: 20px;
+     background: #ffffff;
 }
  .to-ho-hotel-con-2 {
 }
@@ -714,10 +776,8 @@
 }
  .to-ho-hotel-con-3 ul li {
      list-style-type: none;
-     float: left;
 }
  .to-ho-hotel-con-3 ul li:last-child {
-     float: right;
      padding-top: 10px;
 }
  .ho-hot-rat-star {
@@ -760,18 +820,7 @@
      padding: 0px 5px;
      display: none;
 }
- .hot-page2-hli-3 {
-     width: 35px;
-     height: 35px;
-     position: absolute;
-     background-color: rgba(255, 197, 37, 0.79);
-    /* bottom: 8px;
-     */
-     padding: 4px;
-     margin: 9px 5px;
-     right: 5px;
-     border-radius: 5px;
-}
+
  .to-ho-hotel-con-4 {
      position: relative;
      overflow: hidden;
@@ -828,7 +877,7 @@
      color: #fff;
      border-radius: 25px;
      border: 1px solid #253747;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .hom-hot-av-tic-list {
      left: 10px;
@@ -937,7 +986,7 @@
      */
     /* margin-bottom: 25px;
      */
-     font-family: 'raleway', sans-serif;;
+     
      font-weight: 600;
 }
  .tour-consul p {
@@ -973,7 +1022,7 @@
      display: inline-block;
      background: #1aa5d8;
      background: linear-gradient(to bottom, #2e9da2, #13b194);
-     font-family: 'raleway', sans-serif;;
+     
 }
  .to-con-3 {
      text-transform: uppercase;
@@ -984,7 +1033,7 @@
      display: inline-block;
      background: #1aa5d8;
      background: linear-gradient(to bottom, #1aa5d8, #1386b1);
-     font-family: 'raleway', sans-serif;;
+     
 }
  .to-con-4 {
      text-transform: uppercase;
@@ -995,7 +1044,7 @@
      display: inline-block;
      background: #1aa5d8;
      background: linear-gradient(to bottom, #1aa5d8, #1386b1);
-     font-family: 'raleway', sans-serif;;
+     
 }
  .ho-con-cont {
 }
@@ -1032,7 +1081,7 @@
      font-size: 18px;
      line-height: 40px;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .events table tr td {
      color: #727070;
@@ -1055,7 +1104,7 @@
      padding: 6px 15px;
      border-radius: 2px;
      display: inline-block;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .events table tr td a:hover {
      background: #e23464;
@@ -1066,7 +1115,7 @@
      padding-right: 5px;
 }
  .events-1 {
-     font-family: 'Montserrat', sans-serif;
+     
 }
  .events-1 h1 {
      margin-top: 0px;
@@ -1077,7 +1126,7 @@
 }
  .events-title {
      background: none !important;
-    /* font-family: 'Montserrat', sans-serif;
+    /* 
      */
     /* text-transform: uppercase;
      */
@@ -1167,14 +1216,14 @@
      line-height: 34px;
      margin-top: 0px;
      margin-bottom: 0px;
-     font-family: 'raleway', sans-serif;;
+     
      font-weight: 600;
 }
  .place h3 span {
      color: #253d52;
      display: block;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
      text-transform: capitalize;
 }
  .place p {
@@ -1271,7 +1320,7 @@
      display: inline-block;
      background: #1aa5d8;
      background: linear-gradient(to bottom, #1aa5d8, #1386b1);
-     font-family: 'raleway', sans-serif;;
+     
      border: 0px;
      text-transform: uppercase;
 }
@@ -1500,7 +1549,7 @@
  .foot-spec span {
      color:#e67f31;
      text-transform: uppercase;
-     font-family: 'raleway', sans-serif;;
+     
      font-weight: 700;
      font-size: 18px;
 }
@@ -1657,7 +1706,7 @@
      padding: 6px 15px;
      border-radius: 2px;
      display: inline-block;
-     font-family: 'raleway', sans-serif;;
+     
     /* padding: 6px;
      */
      transition: all 0.5s ease;
@@ -1788,7 +1837,7 @@
 }
  .inner_banner h2 span {
      color: #FFF;
-     font-family: 'raleway', sans-serif;;
+     
      font-size: 32px;
      font-weight: 600;
 }
@@ -2036,7 +2085,7 @@
      text-transform: capitalize;
 }
  .posts h5 {
-     font-family: 'raleway', sans-serif;;
+     
      font-weight: 600;
      font-size: 16px;
      margin-bottom: 8px;
@@ -2051,7 +2100,7 @@
  .posts a {
 }
  .post_author {
-     font-family: 'raleway', sans-serif;;
+     
      font-weight: 700;
 }
  .post_date {
@@ -2147,7 +2196,7 @@
      margin: 25px 0px 15px 0px;
      font-size: 16px;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
      color: #1c416d;
 }
  .days h4 span {
@@ -2724,7 +2773,7 @@
  .tips_travel_2 h4 {
      color: #253d52;
      margin-top: 25px;
-     font-family: 'raleway', sans-serif;;
+     
      font-size: 18px;
      font-weight: 600;
      text-transform: capitalize;
@@ -3214,7 +3263,7 @@
      margin-bottom: 2px;
      color: #343c42;
      font-size: 16px;
-     font-family: 'raleway', sans-serif;;
+     
      font-weight: 600;
      -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
@@ -3274,9 +3323,9 @@
  .hot-page2-hom-pre-tit h3 {
      color: #343c42;
      font-size: 28px;
-    /* font-family: 'Montserrat', sans-serif;
+    /* 
      */
-     font-family: 'raleway', sans-serif;;
+     
      font-weight: 600;
 }
  .hot-page2-hom-pre-tit h3 span {
@@ -3507,7 +3556,7 @@
      -moz-border-radius: 3px;
      border-radius: 3px;
      font-size: 12px;
-     font-family: arial, helvetica, sans-serif;
+     
      padding: 5px 10px;
      text-decoration: none;
      text-shadow: -1px -1px 0 rgba(177, 177, 177, 0.3);
@@ -3692,7 +3741,7 @@
      -moz-border-radius: 3px;
      border-radius: 3px;
      font-size: 12px;
-     font-family: arial, helvetica, sans-serif;
+     
      padding: 5px 10px;
      text-decoration: none;
      text-shadow: -1px -1px 0 rgba(177, 177, 177, 0.3);
@@ -3964,7 +4013,7 @@
      -moz-border-radius: 3px;
      border-radius: 3px;
      font-size: 12px;
-     font-family: arial, helvetica, sans-serif;
+     
      padding: 5px 10px;
      text-decoration: none;
      text-shadow: -1px -1px 0 rgba(177, 177, 177, 0.3);
@@ -4336,7 +4385,7 @@
      display: block !important;
      color: #fff;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
      text-transform: uppercase;
 }
  .tourz-hom-ser {
@@ -4368,7 +4417,7 @@
      text-align: center;
      color: #fff;
      border-radius: 5px;
-     font-family: 'raleway', sans-serif;;
+     
     /* position: relative;
      */
     /* overflow: hidden;
@@ -4408,7 +4457,7 @@
      color: #fff;
      padding: 2px 10px;
      border-radius: 2px;
-     font-family: 'raleway', sans-serif;;
+     
      background: #e8095a;
      background: linear-gradient(to bottom, #e8095a, #d40852);
 }
@@ -4480,7 +4529,7 @@
      padding: 12px 20px;
      font-weight: 500;
      cursor: pointer;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .mob-top {
 }
@@ -4721,7 +4770,7 @@
  .db-2-main-com span {
      font-size: 24px;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .db-2-main-com ul {
      margin-bottom: 0px;
@@ -4830,7 +4879,7 @@
      display: block !important;
      color: #fff;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
      text-transform: uppercase;
      text-align: center;
 }
@@ -5059,7 +5108,7 @@
  .v2-ho-se-ri h5{
      color: #fff;
      text-transform: uppercase;
-     font-family: 'raleway', sans-serif;;
+     
      font-size: 10px;
      letter-spacing: 4px;
      font-weight: 100;
@@ -5075,7 +5124,7 @@
      font-size: 16px;
      margin-bottom: 0px;
      font-weight: 100;
-     font-family: 'raleway', sans-serif;;
+     
      line-height: 30px;
 }
  .v2-search-form {
@@ -5327,14 +5376,14 @@
 }
 /* Component containers ----------------------------------*/
  .ui-widget {
-     font-family: Arial, Helvetica, sans-serif;
+     
      font-size: 1em;
 }
  .ui-widget .ui-widget {
      font-size: 1em;
 }
  .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
-     font-family: Arial, Helvetica, sans-serif;
+     
      font-size: 1em;
 }
  .ui-widget.ui-widget-content {
@@ -5443,7 +5492,7 @@
      line-height: 35px;
      font-weight: 600;
      font-size: 14px;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .v2-sub-sinl-men {
 }
@@ -5467,7 +5516,7 @@
      display: inline-block;
      background: #1aa5d8;
      background: linear-gradient(to bottom, #1aa5d8, #1386b1);
-     font-family: 'raleway', sans-serif;;
+     
      font-size: 13px;
 }
  .menu-arr:after {
@@ -5554,7 +5603,7 @@
      color: #fff;
      font-weight: 400;
      font-size: 11.5px;
-     font-family: 'Montserrat', sans-serif;
+     
      padding: 10px;
      border-radius: 3px;
 }
@@ -5591,7 +5640,7 @@
  .wed-logo a{
 }
  .wed-logo a img{
-     width: 250px;
+     height: 50px;
      padding: 7px 0px;
 }
  .wed-menu{
@@ -5663,7 +5712,7 @@
      top: 16px;
      left: 18px;
      font-size: 12px;
-     font-family: 'Open Sans', sans-serif;
+     
 }
  .wed-search:before{
      content: '';
@@ -5719,7 +5768,7 @@
     /* text-transform: uppercase;
      */
      position:relative;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .main-menu ul li a:hover{
      color: #e23464;
@@ -6069,7 +6118,7 @@
      text-align: center;
      color: #fff;
      border-radius: 70px;
-     font-family: 'raleway', sans-serif;;
+     
      position: relative;
      overflow: hidden;
      line-height: 24px;
@@ -6344,7 +6393,7 @@
      left: 20px;
      top: 15px;
      font-size: 16px;
-     font-family: 'Open Sans', sans-serif;
+     
 }
 /*-------------------------------------------------*/
 /* = 21.MEGA MENU 
@@ -7180,7 +7229,7 @@
      -webkit-transform-origin: -10% center;
      -ms-transform-origin: -10% center;
      transform-origin: -10% center;
-     font-family: tahoma;
+     
      box-shadow: 0 0 0 1px #3d793f;
      text-align: center;
 }
@@ -7517,7 +7566,7 @@
      font-size: 30px;
      color: #fff;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
      width: 100%;
      display: block;
      line-height: 46px;
@@ -7528,7 +7577,7 @@
      font-size: 66px;
      color: #fff;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
      width: 100%;
      display: block;
      line-height: 46px;
@@ -7544,7 +7593,7 @@
  .offer-l ul li span {
      display: block;
      color: #ecdee0;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .offer-l ul li a {
      border-radius: 70px;
@@ -7552,6 +7601,9 @@
      height: 60px;
      vertical-align: sub;
      background: #e67e22;
+     display: flex;
+     justify-content: center;
+     align-items: center;
     /* border: 1px solid #a59d9d;
      */
 }
@@ -7559,7 +7611,6 @@
      width: 35px;
      padding: 0px;
      height: 35px;
-     margin-left: -8px;
 }
  .offer-r {
      padding: 50px;
@@ -7571,7 +7622,7 @@
      */
      color: #fff;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
      display: inline-block;
      line-height: 46px;
      padding-top: 30px;
@@ -7597,7 +7648,7 @@
      text-transform: capitalize;
      color: #e67e22;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .or-12 {
      display: block;
@@ -7610,7 +7661,7 @@
  .or-2 {
      color: #fff;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
      display: inline-block;
      line-height: 46px;
      padding-top: 30px;
@@ -7657,7 +7708,7 @@
      text-transform: capitalize;
      color: #fff;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .or-22 {
      font-size: 75px;
@@ -7665,7 +7716,7 @@
      text-transform: capitalize;
      color: #fff;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .or-23 {
      font-size: 34px;
@@ -7673,7 +7724,7 @@
      text-transform: capitalize;
      color: #fff;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .or-24 {
      font-size: 14px;
@@ -7682,7 +7733,7 @@
      text-transform: capitalize;
      color: #fff;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
      border: 1px solid #fbafb9;
      padding: 6px;
      border-radius: 25px;
@@ -7694,7 +7745,7 @@
      text-transform: capitalize;
      color: #fff;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
 }
  .slider-wid {
      height: 600px;
@@ -7734,7 +7785,7 @@
      color: #fff;
      text-transform: uppercase;
      font-weight: 600;
-     font-family: 'raleway', sans-serif;;
+     
      border-radius: 2px;
      font-size: 14px;
      margin-right: 10px;
