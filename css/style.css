@@ -28,7 +28,7 @@ a:hover {
     -o-transition: all 0.5s ease;
 }
 a, p, li, td, span {
-    font-size: 14.5px;
+    font-size: 16.5px;
     line-height: 24px;
     
     font-weight: 400;
@@ -659,10 +659,10 @@ section.c3 {
 .to-ho-hotel-con.package .time {
    position: absolute;
    top: 15px;
-   background: #00bcb3;
+   background: #5bb025;
    color: #fff;
    padding: 3px 10px;
-   font-size: 14px;
+   font-size: 16px;
    border-radius: 10px;
    left: 15px;
 }
@@ -712,7 +712,7 @@ align-items: flex-start;
 .package-bottom .ho-hot-pri {
    font-size: 38px;
    font-weight: 600;
-   color: #FF7550;
+   color: #e67f31;
    float: none;
 }
 .package-bottom .ho-hot-pri-dis{
@@ -726,8 +726,8 @@ align-items: flex-start;
    font-weight: 500;
    color: #fff;
    text-align: center;
-   background-color: #FF7550;
-   border: 1px solid #FF7550;
+   background-color: #e67f31;
+   border: 1px solid #e67f31;
    margin-right: 20px;
    text-transform: capitalize;
    border-radius: 5px;
