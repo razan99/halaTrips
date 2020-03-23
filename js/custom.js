@@ -207,3 +207,8 @@ $(function() {
         return date;
     }
 });
+
+$(function(){
+    
+    $(".fotorama").fotorama({width:"100%",nav:"thumbs",allowfullscreen:"true",ratio:"350/200",fit:"cover",autoplay:"true"})
+});
