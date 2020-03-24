@@ -665,6 +665,16 @@ section.c3 {
    font-size: 16px;
    border-radius: 10px;
    left: 15px;
+   z-index: 2;
+}
+.to-ho-hotel-con.package img{
+    transition: all 1s;
+}
+.to-ho-hotel-con.package:hover img{
+    transform:  scale(1.1) rotate(3deg);;
+}
+.to-ho-hotel-con.package:hover .to-ho-hotel-con-1:before{
+    opacity: 0;
 }
 .to-ho-hotel-con.package .time span{
    font-size: 13px;
@@ -736,6 +746,7 @@ align-items: flex-start;
 .to-ho-hotel-con-1 {
     position: relative;
     height: 230px;
+    overflow: hidden;
 }
 .to-ho-hotel-con-1:before {
     content: '';
@@ -745,6 +756,8 @@ align-items: flex-start;
     bottom: 0px;
     left: 0px;
     width: 100%;
+    transition: all 1s;
+    z-index: 1;
 }
 .to-ho-hotel-con-1 img {
     width: 100%;
@@ -1671,16 +1684,19 @@ footer ul li a {
 /* 12.1 OFFERS & DISCOUNTS 
 /*-------------------------------------------------------*/
 .disco {
-    background: url('../images/f1.png') no-repeat center center;
-    background-size: cover;
-    padding: 20px 15px 22px 15px;
+
     text-align: center;
+    background-size: cover;
+
    /* margin-bottom: 30px;
     */
 }
 .disco1 {
-    background: url('../images/f2.png') no-repeat center center;
-    background-size: cover;
+}
+.disco .overlay{
+    padding: 20px 15px 22px 15px;
+
+    background: rgba(0, 0, 0, 0.377);
 }
 .disco h3 {
     color: #FFEB3B;
@@ -1752,10 +1768,11 @@ footer ul li a {
 .footer_places ul li a {
     color: #ffffff;
     text-decoration: none;
-   /* border-right: 1px solid #9d9d9d;
-    */
+    /* border-right: 1px solid #9d9d9d; */
     background: #1aa5d8;
-    padding: 5px;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-size: 15px;
 }
 .footer_places ul li a:hover {
     transition: all 0.5s ease;
@@ -4286,8 +4303,11 @@ fieldset, label {
    object-fit: cover;
 }
 .tourz-search  .overlay{
-   background: rgba(0, 0, 0, 0.7);
-   position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    min-height: calc(85vh - 88px);
+    display: flex;
+    align-items: center;
 }
 .tourz-search {
 }
@@ -4296,7 +4316,7 @@ fieldset, label {
 #select-city {
     background: #fff;
     border: 0px;
-    height: 45px;
+    height: 50px;
     border-radius: 2px;
     padding: 0px 10px;
     box-sizing: border-box;
@@ -4306,7 +4326,7 @@ fieldset, label {
 #select-search {
     background: url(../images/icon/search.png) no-repeat left center #fff;
     border: 0px;
-    height: 45px;
+    height: 50px;
     border-radius: 2px;
     padding: 0px 10px 0px 35px;
     box-sizing: border-box;
@@ -4322,7 +4342,6 @@ fieldset, label {
     width: 100%;
 }
 .tourz-search-1 {
-    padding: 150px 0px 100px 0px;
     width: 70%;
     margin: 0 auto;
     text-align: center;
@@ -4375,7 +4394,7 @@ fieldset, label {
     margin: 0px 5px;
 }
 .tourz-sear-btn {
-    height: 45px;
+    height: 50px;
     line-height: 45px;
     background: #e67e22;
     background: linear-gradient(to bottom,#e67e22,#e67e22);
@@ -7502,7 +7521,7 @@ html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:activ
 /* = HOME PAGE OFFER 
 /*-------------------------------------------------*/
 .offer {
-    background: url(../images/placebg.jpg) no-repeat;
+    background: url(https://www.hala-arab.com/images/7.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -7603,6 +7622,8 @@ html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:activ
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
    /* border: 1px solid #a59d9d;
     */
 }
@@ -7957,4 +7978,9 @@ html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:activ
 .trav-list-bod p{
     font-size: 13px;
     line-height: 20px;
+}
+
+.popular-cities{
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
