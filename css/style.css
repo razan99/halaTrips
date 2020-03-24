@@ -2028,15 +2028,16 @@ footer ul li a {
     position: relative;
     overflow: hidden;
     margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
 }
 .banner_book_1 ul li {
-    display: inline;
+    display: block;
     line-height: 55px;
     font-size: 18px;
     border-right: 1px solid #314c64;
     color: #fff;
-    float: left;
-    width: 24%;
+    width: 25%;
     text-align: center;
 }
 .banner_book_1 ul li:last-child {
@@ -5652,8 +5653,6 @@ html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:activ
 }	
 /*--======================================================================--*/
 .wed-logo{
-    float: left;
-    width: 20%;
 }
 .wed-logo a{
 }
@@ -5765,16 +5764,12 @@ html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:activ
 /*-------------------------------------------------*/
 /* = 2.MAIN MENU 
 /*-------------------------------------------------*/
-.main-menu{
-    float: right;
-    width: 80%;
-}
+
 .main-menu ul{
-    float: right;
     margin-bottom: 0px;
+    display: flex;
 }
 .main-menu ul li{
-    float: left;
     display: inline-block;
 }
 .main-menu ul li a{
@@ -7468,12 +7463,12 @@ html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:activ
     font-size: 12px;
 }
 .ed-com-t1-right{
-    float: right;
 }
 .ed-com-t1-right ul{
+    display: flex;
+    margin-bottom: 0;
 }
 .ed-com-t1-right ul li{
-    float: left;
     display: inline-block;
 }
 .ed-com-t1-right ul li a{
@@ -7983,4 +7978,9 @@ html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:activ
 .popular-cities{
     padding-top: 50px;
     padding-bottom: 100px;
+}
+.top-menu-inner{
+display: flex;
+justify-content: space-between;
+align-items: center;
 }

@@ -210,5 +210,17 @@ $(function() {
 
 $(function(){
     
-    $(".fotorama").fotorama({width:"100%",nav:"thumbs",allowfullscreen:"true",ratio:"350/200",fit:"cover",autoplay:"true"})
+    $(".fotorama").fotorama({width:"100%",nav:"thumbs",allowfullscreen:"true",ratio:"350/200",fit:"cover",autoplay:"true"});
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+         //>=, not <=
+        if (scroll >= 400) {
+            //clearHeader, not clearheader - caps H
+            $(".banner_book_1 ul").addClass("fixed");
+        } else {
+            $(".banner_book_1 ul").removeClass("fixed");
+
+        }
+    }); //missing );
 });

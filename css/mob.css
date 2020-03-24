@@ -321,15 +321,8 @@
          width: 100%;
          float: left;
     }
-     .banner_book_1 ul li {
-         width: 48%;
-    }
-     .dl3 {
-         display: none !important;
-    }
-     .dl2 {
-         display: none !important;
-    }
+ 
+ 
      .tour_star {
          display: block;
     }
@@ -600,18 +593,32 @@
 /* When the browser is between 0px and 481px wide,below css will be applied. 
 /*-------------------------------------------------------*/
  @media screen and (max-width: 480px) {
+    .banner_book_1 ul {
+        flex-direction: column;
+        
+    }
+    .banner_book_1 ul li{
+        width: 100%;
+        border-right:0;
+        border-bottom: 1px solid #314c64;
+
+        
+    }.banner_book_1 ul.fixed .dl4{
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+        width: 100%;
+        left: 0;
+    }
+    
      body {
          overflow-x: hidden !important;
     }
      .arrange ul li {
          width: 98% !important;
     }
-     .banner_book_1 ul li {
-         width: 100%;
-    }
-     .dl1 {
-         display: none !important;
-    }
+
+ 
      .mob_logo {
          width: 80%;
     }
@@ -743,16 +750,12 @@
         /*width: 100%;
         */
     }
-     .banner_book_1 ul li {
-         width: 32%;
-    }
+  
      .dl1 {
     }
      .dl2 {
     }
-     .dl3 {
-         display: none !important;
-    }
+  
      .dl4 {
     }
 }
