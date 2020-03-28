@@ -1816,7 +1816,7 @@ footer ul li a {
 .inner_banner::before {
     content: '';
     position: absolute;
-    background: url('https://www.fairmont.com/assets/0/104/1785/1790/5059/5060/d3c45b89-d346-45dd-998e-99152ed947e6.jpg');
+    background: rgba(0, 0, 0, 0.43);
     top: 0px;
     bottom: 0px;
     left: 0px;
@@ -4364,7 +4364,6 @@ fieldset, label {
 .tourz-search-form label {
     text-overflow: ellipsis;
     white-space: pre;
-    overflow: hidden;
     right: 15px;
 }
 .tourz-search-form div:nth-child(1) {
@@ -7984,3 +7983,196 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
+
+.input-field label span{
+
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    top: -5px;
+}
+
+.input-field input {
+    height: 50px;
+}
+.input-field {
+    margin-top: 2rem !important;
+
+}
+.input-field label.active {
+    transform: translateY(-9px) !important;
+    opacity: 1 !important;
+    background: #fff;
+    display: inline-block;
+    width: auto !important;
+    font-size: 11px !important;
+    color: #e67e22 !important;
+    font-weight: bold;
+    top:0;
+}
+.input-field > label{
+    right: auto;
+    padding: 2px 5px;
+}
+.hotels-search .tourz-search-1{
+    width: 100%;
+}
+.hotels-search .tourz-search-form div:nth-child(2) ,
+.hotels-search  .tourz-search-form div:nth-child(1){
+width: auto;
+float: none;
+}
+.hotels-search  .tourz-search-form div{
+    margin: 0;
+}
+.hotels-search .tourz-search-1 form {
+    background: #fff;
+    padding: 10px 0 40px;
+    border-radius: 10px;
+}
+.hotels-search .tourz-search-1 form input{
+    background: #f1f1f1 !important ;
+    border: none;
+    border-radius: 4px;
+    padding-left: 39px;
+    font-size: 15px !important;
+}
+.hotels-search .input-field >  label {
+    left: 35px;
+}
+.hotels-search .tourz-search-1 form button{
+    border: none;
+    width: 100%;
+}
+.hotels-search .tourz-search-1 form button i{
+    margin-right: 5px;
+}
+.hotels-search .tourz-search-form .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+}
+
+.list-dropdown-passengers , .list-dropdown-passengers ul{
+    padding: 0;
+    text-align-last: left;
+}
+
+.list-dropdown-passengers {
+    list-style: none;
+    position: absolute;
+    z-index: 10;
+    top: 60px;
+    padding: 20px;
+    width: 250px;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    background-color: #fff; }
+    .list-dropdown-passengers.is-active {
+      opacity: 1;
+      visibility: visible; }
+    .list-dropdown-passengers > li + li {
+      padding-top: 15px;
+      margin-top: 15px;
+      border-top: 1px solid #ddd; }
+    .list-dropdown-passengers > li:last-child {
+      display: flex;
+      margin-top: 5px;
+      border-top: none; }
+  
+  /* List Persons Count */
+  .list-persons-count {
+    list-style: none;
+    padding-bottom: 5px; }
+    .list-persons-count > li {
+      display: flex;
+      align-items: center; }
+      .list-persons-count > li + li {
+        margin-top: 5px; }
+      .list-persons-count > li > span:first-child {
+        margin-right: auto;
+        color: #222; }
+  
+  /* Counter Add Item */
+  .counter-add-item {
+    display: flex;
+    align-items: center; }
+    .counter-add-item > * {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      width: 50px; }
+    .counter-add-item a {
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      font-weight: 400;
+      border: 1px solid #5091fa;
+      border-radius: 5px;
+      color: #5091fa;
+      background: #fff; }
+      .counter-add-item a:hover {
+        background-color: #5091fa;
+        color: #fff; }
+    .counter-add-item input[type="text"] {
+      margin: 0 5px;
+      padding: 0;
+      width: 40px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 14px;
+      font-weight: 400;
+      text-align: center; }
+      .counter-add-item input[type="text"]:focus {
+        border-color: #ccc;
+        color: #222; }
+  
+  @media (max-width: 768px) {
+    .counter-add-item > * {
+      height: 40px;
+      width: 40px; }
+    .counter-add-item input[type="text"] {
+      margin: 0 5px; } }
+  
+  /* List Select Grade */
+  .list-select-grade {
+    list-style: none; 
+   
+
+}
+    .list-select-grade li + li {
+      margin-top: 3px; }
+  
+      .custom-control [type="checkbox"] + label{
+        padding-left: 0;
+      }
+      .custom-control-label::before  ,
+      .custom-control-label::after{
+        left: 0 !important;
+      }
+      .custom-control-label{
+          position: static !important;
+      }
+      .custom-control{
+          padding-left: 2rem;
+      }
+      .custom-control-input:checked~.custom-control-label::before {
+        border-top: 2px solid transparent ;
+        border-left: 2px solid transparent;
+        border-right: 2px solid #14addb;
+        border-bottom: 2px solid #14addb;
+        background: transparent;
+      }
+      
+      .btn-reservation-passengers{
+        padding: 5px 15px;
+        background: #e67e22;
+        color: #fff;
+        border-radius: 5px;
+      }

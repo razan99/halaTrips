@@ -709,6 +709,13 @@
 /* When the browser is 992px or wider,below css will be applied. 
 /*-------------------------------------------------------*/
  @media screen and (min-width: 992px) {
+    .banner_book.fixed{
+        position: fixed;
+        top: 56px;
+        z-index: 100;
+        width: 100%;
+        left: 0;
+    }
      .help-line {
          background: url('../images/home_left.jpg') no-repeat #ffc107;
          background-size: 50%;

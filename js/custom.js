@@ -223,4 +223,79 @@ $(function(){
 
         }
     }); //missing );
+
+
+
+
+
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+         //>=, not <=
+        if (scroll >= 300) {
+            //clearHeader, not clearheader - caps H
+            $(".banner_book").addClass("fixed");
+        } else {
+            $(".banner_book ").removeClass("fixed");
+
+        }
+    }); //missing );
+
+
+    $(".show-dropdown-passengers").each( function() {
+		var $this = $(this),
+			dropdownPassengers = $this.siblings(".list-dropdown-passengers");
+	
+		$this.on( "focus", function() {
+			$(".list-dropdown-passengers").removeClass("is-active");
+			dropdownPassengers.addClass("is-active");
+		} )
+	
+		dropdownPassengers.find(".btn-reservation-passengers").on("click", function () {
+			$this.siblings(".list-dropdown-passengers").removeClass("is-active");
+		} )
+	} );
 });
+
+
+
+function itemClickCounter() {
+	jQuery.fn.allowDigitsOnly = function () {
+		return this.each(function () {
+			$(this).keydown(function (e) {
+				var key = e.charCode || e.keyCode || 0;
+				return (
+					key == 8 ||
+					key == 9 ||
+					key == 46 ||
+					key == 110 ||
+					key == 190 ||
+					(key >= 35 && key <= 40) ||
+					(key >= 48 && key <= 57) ||
+					(key >= 96 && key <= 105));
+			});
+		});
+	};
+
+	var inputField = $(".counter-add-item input");
+	inputField.allowDigitsOnly();
+
+	$(".increase-btn").on("click", function (e) {
+		e.preventDefault();
+		var inputField = $(this).prev("input");
+		var currentInputValue = parseInt(inputField.val());
+		inputField.val(currentInputValue + 1);
+	});
+
+	$(".decrease-btn").on("click", function (e) {
+		e.preventDefault();
+		var inputField = $(this).next("input");
+		var currentInputValue = parseInt(inputField.val());
+		inputField.val(currentInputValue - 1);
+
+		if (currentInputValue < 1) {
+			inputField.val("0");
+		}
+	});
+}
+itemClickCounter();
