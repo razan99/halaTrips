@@ -4351,7 +4351,7 @@ fieldset, label {
 .tourz-search-1 h1 {
     color: #fff;
     font-size: 50px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 }
 .tourz-search-1 p {
     font-size: 18px;
@@ -4421,9 +4421,9 @@ fieldset, label {
 }
 .tourz-hom-ser ul li {
     float: left;
-    display: inline;
+    display: inline-block;
     text-align: center;
-    width: 25%;
+    width: 50%;
     padding: 0px 5px;
 }
 .tourz-hom-ser ul li a {
@@ -8030,6 +8030,7 @@ float: none;
     padding: 10px 0 40px;
     border-radius: 10px;
 }
+
 .hotels-search .tourz-search-1 form input{
     background: #f1f1f1 !important ;
     border: none;
@@ -8052,7 +8053,7 @@ float: none;
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .list-dropdown-passengers , .list-dropdown-passengers ul{
@@ -8176,3 +8177,40 @@ float: none;
         color: #fff;
         border-radius: 5px;
       }
+      .nav-tabs{
+          border: none;
+          margin-bottom: 25px;
+      }
+      
+      .nav-tabs .nav-link:hover ,
+      .nav-tabs .nav-link:focus ,
+      .nav-tabs .nav-link{
+          border: none;
+      }
+      .nav-tabs .nav-link {
+        background: #fff;
+        margin-right: 15px;
+        border-radius: 5px;
+        color: #222;
+        position: relative;
+        transition: none;
+        font-size: 18px;
+        text-transform: capitalize;
+        padding: 0.8rem 1.5rem;
+    }
+    .nav-tabs .nav-link.active{
+        background: #e67e22;
+        color: #fff;
+    }
+    .nav-tabs .nav-link.active:after {
+        position: absolute;
+    bottom: -33px;
+    width: 0;
+    height: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 15px 10px 18px 10px;
+    border-color: #e67e22 transparent transparent transparent;
+    border-style: solid;
+    content: '';
+    }
