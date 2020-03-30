@@ -51,3 +51,8 @@ $(document).ready(function() {
     });
 
 });
+
+
+$(document).ready( function() {
+$("#txtEditor").Editor();                    
+});

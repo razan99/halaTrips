@@ -4195,13 +4195,13 @@ fieldset, label {
 .tour-mig-lc-con {
     position: absolute;
     width: 100%;
-    margin-top: -125px;
+    margin-top: -100px;
     padding: 20px 20px 0px 20px;
     display: block;
     text-align: right;
 }
 .tour-mig-lc-con2 {
-    margin-top: -100px;
+    margin-top: -80px;
 }
 .tour-mig-lc-con h5 {
     font-size: 26px;
@@ -4351,7 +4351,7 @@ fieldset, label {
 .tourz-search-1 h1 {
     color: #fff;
     font-size: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
 }
 .tourz-search-1 p {
     font-size: 18px;

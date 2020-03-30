@@ -19,8 +19,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mob.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/editor.css">
-
     <link rel="stylesheet" href="css/materialize.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -73,6 +71,8 @@
                     </li>
                     <li><a href="package-all.html" class="waves-effect"><i class="fa fa-umbrella" aria-hidden="true"></i> Tour Packages</a>
                     </li>
+                    <li><a href="event-all.html" class="waves-effect"><i class="fa fa-flag-checkered" aria-hidden="true"></i> Events</a>
+                    </li>
                     <li><a href="offers.html" class="waves-effect"><i class="fa fa-tags" aria-hidden="true"></i> Offers</a>
                     </li>
                     <li><a href="user-add.html" class="waves-effect"><i class="fa fa-user-plus" aria-hidden="true"></i> Add New User</a>
@@ -124,7 +124,7 @@
                                     </li>
                                     <li><a href="package-add.html" class="menu-active">Add New Package</a>
                                     </li>
-                                    
+                                   
                                 </ul>
                             </div>
                         </li>
@@ -186,139 +186,100 @@
             <div class="sb2-2">
                 <div class="sb2-2-2">
                     <ul>
-                        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                        <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                         </li>
-                        <li class="active-bre"><a href="#"> Add New Package</a>
-                        </li>
-                        <li class="page-back"><a href="index.html"><i class="fa fa-backward" aria-hidden="true"></i> Back</a>
+                        <li class="active-bre"><a href="#"> Package Booking Enquiry</a>
                         </li>
                     </ul>
                 </div>
-                <div class="sb2-2-add-blog sb2-2-1">
-                    <div class="box-inn-sp">
-                        <div class="inn-title">
-                            <h4>Add New Package</h4>
-                            <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
-                        </div>
-                        <div class="bor">
-                            <form>
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <input id="list-title" type="text" class="validate">
-                                        <label for="list-title">Package Name</label>
-                                    </div>
-                                    <div class="input-field col s12">
-                                        <div class="file-field">
-                                            <div class="btn">
-                                                <span>File</span>
-                                                <input type="file">
-                                            </div>
-                                            <div class="file-path-wrapper">
-                                                <input class="file-path validate" type="text" placeholder="Upload Blog Banner">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="file-field">
-                                        <div class="btn">
-                                            <span>image</span>
-                                            <input type="file">
-                                        </div>
-                                        <div class="file-path-wrapper">
-                                            <input class="file-path validate" type="text" placeholder="Upload Blog Banner">
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="sb2-2-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box-inn-sp">
+                                <div class="inn-title">
+                                    <h4>Package Booking Enquiry</h4>
+                                    <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
+                                    <a class="dropdown-button drop-down-meta" href="#" data-activates="dr-users"><i class="material-icons">more_vert</i></a>
+                                    <ul id="dr-users" class="dropdown-content">
+                                        <li><a href="#!">Add New</a>
+                                        </li>
+                                        <li><a href="#!">Edit</a>
+                                        </li>
+                                        <li><a href="#!">Update</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#!"><i class="material-icons">delete</i>Delete</a>
+                                        </li>
+                                        <li><a href="#!"><i class="material-icons">subject</i>View All</a>
+                                        </li>
+                                    </ul>
 
-
-
-
-
-                                <div class="row">
-                                    <h3>Description</h3>
-
-                                    <div id="txtEditor"></div>
+                                    <!-- Dropdown Structure -->
 
                                 </div>
-                                <div class="row">
-                                    <div class="input-field col s4">
-                                        <select multiple>
-                                            <option value="" disabled selected>Choose package type</option>
-                                            <option value="1">Advertising</option>
-                                            <option value="2">Top offers this mount</option>
-                                            <option value="3">None</option>
-                                        </select>
-                                        <label>Choose package type</label>
-                                    </div>
-                                    <div class="input-field col s4">
-                                        <select multiple>
-                                            <option value="" disabled selected>Choose Country</option>
-                                            <option value="1">Istanbul</option>
-                                            <option value="2">Karedeniz</option>
-                                            <option value="3">Fethiye</option>
-                                            <option value="3">Antalya</option>
-                                            <option value="3">Marmaris & Bodrum</option>
-                                            <option value="3">others</option>
-                                        </select>
-                                        <label>Select Sub Category</label>
-                                    </div>
-                                    <div class="input-field col s4">
-                                        <input id="Package-auth" type="number" class="validate">
-                                        <label for="Package-auth">Free Ticket</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s6">
-                                        <input id="Package-auth" type="number" class="validate">
-                                        <label for="Package-auth">$Price</label>
-                                    </div>
-                                    <div class="input-field col s6">
-                                        <input id="Package-auth" type="number" class="validate">
-                                        <label for="Package-auth"> Old $price</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s6">
-                                        <input id="Package-auth" type="date" class="validate select-wrapper">
-                                        <label for="Package-auth">Arrival Date</label>
-                                    </div>
-                                    <div class="input-field col s6">
-                                        <input id="Package-auth" type="date" class="validate  select-wrapper">
-                                        <label for="Package-auth"> Departure Date</label>
-                                    </div>
-                                </div>
-                                <div class="row days-add">
-
-                                    <div class="input-field col s8">
-                                        <input id="list-title" type="text" class="validate" name="day" id="1">
-                                        <label for="list-title">The path days of tour</label>
-                                    </div>
-                                    <div class="input-field col s4">
-                                        <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
-
-                                        </div>
-                                </div>
-                                <div class="row">
-                                     <div class="input-field col s12">
-                                    <div class="file-field">
-                                        <div class="btn">
-                                            <span>Add Image</span>
-                                            <input type="file">
-                                        </div>
-                                        <div class="file-path-wrapper">
-                                            <input class="file-path validate" type="text" placeholder="Upload packag images">
-                                        </div>
+                                <div class="tab-inn">
+                                    <div class="table-responsive table-desi">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>User Name</th>
+                                                    <th>Package Name</th>
+                                                    <th>Phone</th>
+                                                    <th>Email</th>
+                                                    <th>Total Price</th>
+                                                    <th>Package Url</th>
+                                                    <th>View Details</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><span class="list-img">Ahmed mohamed</span>
+                                                    </td>
+                                                    <td><a href="#"><span class="list-enq-name">Istanboul show</span></a>
+                                                    </td>
+                                                    <td>+91 32111 65412</td>
+                                                    <td>enquiry@mail.com</td>
+                                                    <td>$260</td>
+                                                    <td><a href="custom-package-view.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                    </td>
+                                                    <td>
+                                                    <a href="custom-package-view.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="list-img">Ahmed mohamed</span>
+                                                    </td>
+                                                    <td><a href="#"><span class="list-enq-name">Istanboul show</span></a>
+                                                    </td>
+                                                    <td>+91 32111 65412</td>
+                                                    <td>enquiry@mail.com</td>
+                                                    <td>$260</td>
+                                                    <td><a href="custom-package-view.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                    </td>
+                                                    <td>
+                                                    <a href="custom-package-view.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="list-img">Ahmed mohamed</span>
+                                                    </td>
+                                                    <td><a href="#"><span class="list-enq-name">Istanboul show</span></a>
+                                                    </td>
+                                                    <td>+91 32111 65412</td>
+                                                    <td>enquiry@mail.com</td>
+                                                    <td>$260</td>
+                                                    <td><a href="custom-package-view.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                    </td>
+                                                    <td>
+                                                    <a href="custom-package-view.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                                    </td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
-                                </div>
-                                    
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <input type="submit" class="waves-effect waves-light btn-large" value="Submit">
-                                    </div>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -349,8 +310,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script src="js/editor.js"></script>
-
     <script src="js/custom.js"></script>
 </body>
 
