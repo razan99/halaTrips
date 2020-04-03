@@ -13,11 +13,14 @@
     <!-- FONT-AWESOME ICON CSS -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--== ALL CSS FILES ==-->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/mob.css">
-    <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/kronos.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mob.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -244,75 +247,126 @@
 	
 	<!--====== HOTELS LIST ==========-->
 	<section class="hot-page2-alp hot-page2-pa-sp-top all-hot-bg">
-		<div class="container">
-			<div class="row inner_banner inner_banner_3 bg-none">
-				<div class="hot-page2-alp-tit">
-					<h1>Hotel & Restaurants in Vancouver </h1>
-					<ul>
-						<li><a href="#inner-page-title">Home</a> </li>
-						<li><i class="fa fa-angle-right" aria-hidden="true"></i> </li>
-						<li><a href="#inner-page-title" class="bread-acti">Hotels & Restaurants</a> </li>
-					</ul>
-					<p>World's leading Hotel Booking website,Over 30,000 Hotel rooms worldwide. </p>
+		<div class="inner_banner inner_banner_3 bg-none">
+			<div class="container">
+				<div class="tourz-search hotels-search">
+					<div class="tourz-search-1">
+						<h1 class="topHeader">Search Hotels </h1>
+						<form class="tourz-search-form">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="input-field">
+										<div class="icon">
+											<i class="fa fa-map-marker"></i>
+										</div>
+										<input type="text" id="select-search" class="autocomplete">
+										<label for="select-search" class="search-hotel-type">Going To</label>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="input-field">
+										<div class="icon"><i class="fa fa-6 fa-calendar-o" aria-hidden="true"></i></div>
+										<input type="text" id="kronos1">
+
+										<label for="from">Arrival Date</label>
+									</div>
+								</div>
+								<div class="col-md-2">
+									<div class="input-field">
+										<div class="icon">
+											<i class="fa fa-6 fa-calendar" aria-hidden="true"></i>
+										</div>
+										<input type="text" id="kronos2">
+										<label for="to">Departure Date</label>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="input-field">
+										<div class="icon">
+											<i class="fa fa-6 fa-users" aria-hidden="true"></i>
+										</div>
+										<input type="text"  class="show-dropdown-passengers" >
+										<label for="to">Travelers</label>
+										<ul class="list-dropdown-passengers">
+											<li>
+												<ul class="list-persons-count">
+													<li>
+														<span>Adults:</span>
+														<div class="counter-add-item">
+															<a class="decrease-btn" href="javascript:;">-</a>
+															<input type="text" value="1">
+															<a class="increase-btn" href="javascript:;">+</a>
+														</div><!-- .counter-add-item end -->
+													</li>
+													<li>
+														<span>Childs:</span>
+														<div class="counter-add-item">
+															<a class="decrease-btn" href="javascript:;">-</a>
+															<input type="text" value="0">
+															<a class="increase-btn" href="javascript:;">+</a>
+														</div><!-- .counter-add-item end -->
+													</li>
+												</ul><!-- .list-persons-count end -->
+											</li>
+											<li>
+												<ul class="list-select-grade">
+													<li>
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="customCheck1">
+															<label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+														  </div>
+													<li>
+														<div class="custom-control custom-checkbox">
+															<input type="checkbox" class="custom-control-input" id="customCheck1">
+															<label class="custom-control-label" for="customCheck1">checkbox</label>
+														  </div>
+													</li>
+													   
+												</ul><!-- .list-select-grade end -->
+											</li>
+								   
+											<li>
+												<a class="btn-reservation-passengers">Done</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+	
+	
+	
+	
+	
+	
+	
+								<div class="col-md">
+									<div class="input-field">
+	
+	
+	
+										<button type="submit" class="waves-effect waves-light tourz-sear-btn"><i
+												class="fa fa-search" aria-hidden="true"></i></button>
+									</div>
+								</div>
+							</div>
+	
+	
+	
+	
+						</form>
+				
+					</div>
 				</div>
+			
 			</div>
+	
+		</div>
+		<div class="container">
+			<div class="hot-page2-alp-con">
+
 			<div class="row">
-				<div class="hot-page2-alp-con">
 					<!--LEFT LISTINGS-->
-					<div class="col-md-3 hot-page2-alp-con-left">
-						<!--PART 1 : LEFT LISTINGS-->
-						<div class="hot-page2-alp-con-left-1">
-							<h3>Suggesting Hotels</h3> </div>
-						<!--PART 2 : LEFT LISTINGS-->
-						<div class="hot-page2-hom-pre hot-page2-alp-left-ner-notb">
-							<ul>
-								<!--LISTINGS-->
-								<li>
-									<a href="#">
-										<div class="hot-page2-hom-pre-1 hot-page2-alp-cl-1-1"> <img src="images/hotels/1.jpg" alt=""> </div>
-										<div class="hot-page2-hom-pre-2 hot-page2-alp-cl-1-2">
-											<h5>Taaj Club House</h5> <span>City: illunois, United States</span> </div>
-										<div class="hot-page2-hom-pre-3 hot-page2-alp-cl-1-3"> <span>4.2</span> </div>
-									</a>
-								</li>
-								<!--LISTINGS-->
-								<li>
-									<a href="#">
-										<div class="hot-page2-hom-pre-1 hot-page2-alp-cl-1-1"> <img src="images/hotels/2.jpg" alt=""> </div>
-										<div class="hot-page2-hom-pre-2 hot-page2-alp-cl-1-2">
-											<h5>Lake Palace view Hotel</h5> <span>City: Beijing,China</span> </div>
-										<div class="hot-page2-hom-pre-3 hot-page2-alp-cl-1-3"> <span>4.4</span> </div>
-									</a>
-								</li>
-								<!--LISTINGS-->
-								<li>
-									<a href="#">
-										<div class="hot-page2-hom-pre-1 hot-page2-alp-cl-1-1"> <img src="images/hotels/3.jpg" alt=""> </div>
-										<div class="hot-page2-hom-pre-2 hot-page2-alp-cl-1-2">
-											<h5>First Class Grandd Hotel</h5> <span>City: Berlin,Germany</span> </div>
-										<div class="hot-page2-hom-pre-3 hot-page2-alp-cl-1-3"> <span>5.0</span> </div>
-									</a>
-								</li>
-								<!--LISTINGS-->
-								<li>
-									<a href="#">
-										<div class="hot-page2-hom-pre-1 hot-page2-alp-cl-1-1"> <img src="images/hotels/4.jpg" alt=""> </div>
-										<div class="hot-page2-hom-pre-2 hot-page2-alp-cl-1-2">
-											<h5>Barcelona Grand Pales</h5> <span>City: Chennai,India</span> </div>
-										<div class="hot-page2-hom-pre-3 hot-page2-alp-cl-1-3"> <span>3.0</span> </div>
-									</a>
-								</li>
-								<!--LISTINGS-->
-								<li>
-									<a href="#">
-										<div class="hot-page2-hom-pre-1 hot-page2-alp-cl-1-1"> <img src="images/hotels/8.jpg" alt=""> </div>
-										<div class="hot-page2-hom-pre-2 hot-page2-alp-cl-1-2">
-											<h5>Universal luxury Grand Hotel</h5> <span>City: Rio,Brazil</span> </div>
-										<div class="hot-page2-hom-pre-3 hot-page2-alp-cl-1-3"> <span>3.4</span> </div>
-									</a>
-								</li>
-							</ul>
-						</div>
+					<div class="col-md-3">
+				
 						<!--PART 7 : LEFT LISTINGS-->
 						<div class="hot-page2-alp-l3 hot-page2-alp-l-com">
 							<h4><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Room Available Check</h4>
@@ -412,6 +466,7 @@
 										</li>
 									</ul>
 								</form> <a href="javascript:void(0);" class="hot-page2-alp-p5-btn-s">view more</a> </div>
+
 						</div>
 						<!--END PART 5 : LEFT LISTINGS-->
 						<!--PART 6 : LEFT LISTINGS-->
@@ -510,533 +565,60 @@
 					<div class="col-md-9 hot-page2-alp-con-right">
 						<div class="hot-page2-alp-con-right-1">
 							<!--LISTINGS-->
-							<div class="row">
 								<!--LISTINGS START-->
 								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">4.5</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 42 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Universal luxury Grand Hotel</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
+									<div class="row">
+										<div class="col-md-3">
+											<a href="javascript:void(0);">
+													<div class="hotel-list-score">4.5</div>
+													<div class="hot-page2-hli-1">
+														
+														<div class="hotel-img">
+
+														
+														<img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> 
+													</div>
+													</div>
+											
+											</a>
+										</div>
+										<div class="col-md-6">
+											<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html">
+												<h3 class="hotelname">
+													<span>Universal luxury Grand Hotel</span> <span class="neighborhood">taksim</span>
+													
+												</h3>
+												</a>
+												<a href="" class="hotel-location">
+													<img src="images/1.png" alt="">
+													<span>Farmington Hills, U.S.A</span>
+												</a>
+												<div class="special-deal">
+													In High demand - only 4 rooms left
+												</div>
+												<div class="desc">
+													Lorem ipsum, dolor 
+												</div>
+												<div class="cancellation">
+													free cancellation
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="hot-page2-alp-ri-p3">
+												<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650 <span>total for 1 night</span></span>
+												
+												<span class="hot-list-p3-4">
+													<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
+												</span> </div>
 										</div>
 									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
+								
 								</div>
 								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">4.0</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 18 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Taaj Club House</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">5.0</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 53 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Barcelona Grand Pales</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">4.5</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 42 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Universal luxury Grand Hotel</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">4.0</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 18 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Taaj Club House</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">5.0</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 53 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Barcelona Grand Pales</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">4.5</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 42 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Universal luxury Grand Hotel</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">4.5</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 42 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Universal luxury Grand Hotel</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">4.0</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 18 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Taaj Club House</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">5.0</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 53 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Barcelona Grand Pales</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">4.5</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 42 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Universal luxury Grand Hotel</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">4.0</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 18 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Taaj Club House</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">5.0</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 53 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Barcelona Grand Pales</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">4.5</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 42 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Universal luxury Grand Hotel</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->	
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">4.5</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 42 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Universal luxury Grand Hotel</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">4.0</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 18 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Taaj Club House</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">5.0</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 53 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Barcelona Grand Pales</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">4.5</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 42 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Universal luxury Grand Hotel</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">4.0</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 18 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Taaj Club House</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">5.0</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 53 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Barcelona Grand Pales</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->
-								<!--LISTINGS START-->
-								<div class="hot-page2-alp-r-list">
-									<div class="col-md-3 hot-page2-alp-r-list-re-sp">
-										<a href="javascript:void(0);">
-											<div class="hotel-list-score">4.5</div>
-											<div class="hot-page2-hli-1"> <img src="https://www.seehotel-kaiserstrand.com/var/wt/storage/images/hotel-bodensee/hotel/zimmer-suiten/galerie-standard-doppelzimmer/standard-doppelzimmer-see/19188-1-ger-DE/Standard-Doppelzimmer-See.jpg" alt=""> </div>
-											<div class="hom-hot-av-tic hom-hot-av-tic-list"> Available Rooms: 42 </div>
-										</a>
-									</div>
-									<div class="col-md-6">
-										<div class="hot-page2-alp-ri-p2"> <a href="hotel-details.html"><h3>Universal luxury Grand Hotel</h3></a>
-											<ul>
-												<li>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A.</li>
-												<li>+101-1231-1231, +61 6541-4561-12</li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3">
-										<div class="hot-page2-alp-ri-p3">
-											<div class="hot-page2-alp-r-hot-page-rat">25%Off</div> <span class="hot-list-p3-1">Price Per Night</span> <span class="hot-list-p3-2">$650</span><span class="hot-list-p3-4">
-												<a href="hotel-details.html" class="hot-page2-alp-quot-btn">Book Now</a>
-											</span> </div>
-									</div>
-								</div>
-								<!--END LISTINGS-->								
-							</div>
+						
+					
+										
 						</div>
 					</div>
 					<!--END RIGHT LISTINGS-->
@@ -1183,7 +765,22 @@
 	<script src="js/bootstrap.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/materialize.min.js"></script>
+	<script src="js/kronos.js"></script>
+
 	<script src="js/custom.js"></script>
+	<script>
+
+
+    $('#kronos1').kronos({
+		periodTo: '#kronos2' ,
+
+    })
+    $('#kronos2').kronos({
+        periodFrom: '#kronos1'
+    })
+
+
+	</script>
 </body>
 
 </html>
