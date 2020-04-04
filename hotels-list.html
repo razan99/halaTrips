@@ -13,7 +13,6 @@
     <!-- FONT-AWESOME ICON CSS -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--== ALL CSS FILES ==-->
-    <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/kronos.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -60,9 +59,9 @@
                             </ul>
                             <h4>Sighe Seeings Pages</h4>
                             <ul>
-                                <li><a href="place-details.html">Seight Seeing 1</a></li>
-                                <li><a href="place-details.html">Seight Seeing 2</a></li>
-                                <li><a href="place-details.html">Seight Seeing 3</a></li>
+                                <li><a href="place-details.html">SeightSeeing 1</a></li>
+                                <li><a href="place-details.html">SeightSeeing 2</a></li>
+                                <li><a href="place-details.html">SeightSeeing 3</a></li>
                             </ul>
                             <h4>User Dashboard</h4>
                             <ul>
@@ -130,7 +129,7 @@
                                     <li><a href="hotels-list.html">Hotels</a>
                                     </li>
                                     <li class="admi-menu">
-                                        <a href="place-details.html" class="mm-arr">Seight Seeing</a>
+                                        <a href="place-details.html" class="mm-arr">SeightSeeing</a>
                                         <!-- MEGA MENU 1 -->
                                         <div class="mm-pos">
                                             <div class="admi-mm m-menu">
@@ -139,7 +138,7 @@
                                                         <div class="ed-course-in">
                                                             <a class="course-overlay" href="place-details.html">
                                                                 <img src="images/sight/1.jpg" alt="">
-                                                                <span>Seight Seeing - 1</span>
+                                                                <span>SeightSeeing - 1</span>
                                                             </a>
                                                         </div>
                                                         <p>Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.</p>
@@ -149,7 +148,7 @@
                                                         <div class="ed-course-in">
                                                             <a class="course-overlay" href="place-details.html">
                                                                 <img src="images/sight/2.jpg" alt="">
-                                                                <span>Seight Seeing - 2</span>
+                                                                <span>SeightSeeing - 2</span>
                                                             </a>
                                                         </div>
                                                         <p>Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.</p>
@@ -159,7 +158,7 @@
                                                         <div class="ed-course-in">
                                                             <a class="course-overlay" href="place-details.html">
                                                                 <img src="images/sight/3.jpg" alt="">
-                                                                <span>Seight Seeing - 3</span>
+                                                                <span>SeightSeeing - 3</span>
                                                             </a>
                                                         </div>
                                                         <p>Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.</p>
@@ -169,7 +168,7 @@
                                                         <div class="ed-course-in">
                                                             <a class="course-overlay" href="place-details.html">
                                                                 <img src="images/sight/4.jpg" alt="">
-                                                                <span>Seight Seeing - 4</span>
+                                                                <span>SeightSeeing - 4</span>
                                                             </a>
                                                         </div>
                                                         <p>Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.</p>
@@ -287,48 +286,39 @@
 										</div>
 										<input type="text"  class="show-dropdown-passengers" >
 										<label for="to">Travelers</label>
-										<ul class="list-dropdown-passengers">
-											<li>
-												<ul class="list-persons-count">
-													<li>
-														<span>Adults:</span>
-														<div class="counter-add-item">
-															<a class="decrease-btn" href="javascript:;">-</a>
-															<input type="text" value="1">
-															<a class="increase-btn" href="javascript:;">+</a>
-														</div><!-- .counter-add-item end -->
-													</li>
-													<li>
-														<span>Childs:</span>
-														<div class="counter-add-item">
-															<a class="decrease-btn" href="javascript:;">-</a>
-															<input type="text" value="0">
-															<a class="increase-btn" href="javascript:;">+</a>
-														</div><!-- .counter-add-item end -->
-													</li>
-												</ul><!-- .list-persons-count end -->
-											</li>
-											<li>
-												<ul class="list-select-grade">
-													<li>
-														<div class="custom-control custom-checkbox">
-															<input type="checkbox" class="custom-control-input" id="customCheck1">
-															<label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
-														  </div>
-													<li>
-														<div class="custom-control custom-checkbox">
-															<input type="checkbox" class="custom-control-input" id="customCheck1">
-															<label class="custom-control-label" for="customCheck1">checkbox</label>
-														  </div>
-													</li>
-													   
-												</ul><!-- .list-select-grade end -->
-											</li>
+										<div class="list-dropdown-passengers">
+											<div class="list-dropdown-passengers-inner">
+												<div class="list-persons-count-parent">
+													<h6>room 1</h6>
+													<ul class="list-persons-count">
+														<li>
+															<span>Adults:</span>
+															<div class="counter-add-item">
+																<a class="decrease-btn" href="javascript:;">-</a>
+																<input type="text" value="1">
+																<a class="increase-btn" href="javascript:;">+</a>
+															</div><!-- .counter-add-item end -->
+														</li>
+														<li>
+															<span>Childs:</span>
+															<div class="counter-add-item">
+																<a class="decrease-btn" href="javascript:;">-</a>
+																<input type="text" value="0">
+																<a class="increase-btn" href="javascript:;">+</a>
+															</div><!-- .counter-add-item end -->
+														</li>
+													</ul>
+												</div>
+											</div>
+									
+											
+												<a class="btn-reservation-add" id="btn-reservation-add">Add room</a>
+										<a class="btn-reservation-passengers">Done</a>
+						
 								   
-											<li>
-												<a class="btn-reservation-passengers">Done</a>
-											</li>
-										</ul>
+										
+										</div>
+									
 									</div>
 								</div>
 	
@@ -764,7 +754,6 @@
 	<script src="js/jquery-latest.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/wow.min.js"></script>
-	<script src="js/materialize.min.js"></script>
 	<script src="js/kronos.js"></script>
 
 	<script src="js/custom.js"></script>
@@ -778,6 +767,65 @@
     $('#kronos2').kronos({
         periodFrom: '#kronos1'
     })
+
+
+	</script>
+	<script>
+
+		// $('.btn-reservation-add').on('click' , function(e) {
+		// 	e.preventDefault();
+		// 	$('.list-dropdown-passengers-inner').append(hh);
+		// })
+
+
+		document.getElementById('btn-reservation-add').onclick = function createInputField() {
+	
+//   var testId = "player";
+  var i = 0;
+  var x = $('.list-persons-count-parent').length + 1;
+  for (i = 0; i < x; i++) {
+    i;
+  }
+
+  $('.list-dropdown-passengers-inner').append(`
+		<div class="list-persons-count-parent" id="list-persons-count-parent-${i}">
+													<h6><span>room ${i}</span> <a class="delete text-danger" data-for="list-persons-count-parent-${i}">X</a></h6>
+														
+													<ul class="list-persons-count">
+														<li>
+															<span>Adults:</span>
+															<div class="counter-add-item">
+																<a class="decrease-btn" href="javascript:;">-</a>
+																<input type="text" value="1">
+																<a class="increase-btn" href="javascript:;">+</a>
+															</div><!-- .counter-add-item end -->
+														</li>
+														<li>
+															<span>Childs:</span>
+															<div class="counter-add-item">
+																<a class="decrease-btn" href="javascript:;">-</a>
+																<input type="text" value="0">
+																<a class="increase-btn" href="javascript:;">+</a>
+															</div><!-- .counter-add-item end -->
+														</li>
+													</ul>
+												</div>
+		`);
+		itemClickCounter();
+//   input.setAttribute('id', testId + i);
+//   input.type = 'text';
+//   input.name = 'player[]';
+//   var aplayer1 = document.getElementById('input-player-list');
+//   aplayer1.appendChild(input);
+}
+setInterval(function(){ 
+	$('.delete').on('click' , function () {
+	var aa = $(this).data('for');
+	console.log(aa);
+	
+	$('#' + aa).remove();
+})
+ }, 1000);
 
 
 	</script>

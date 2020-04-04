@@ -138,7 +138,7 @@ $(document).ready(function() {
             "CityCenter": 'images/icon/29.png',
             "Holiday Hotel Inn": 'images/icon/13.png',
             "Tour and Travel Packages": 'images/icon/14.png',
-            "City Seight Seeings": 'images/icon/15.png',
+            "City SeightSeeings": 'images/icon/15.png',
 "Mandarin Oriental, Hong Kong, China": 'images/icon/25.png',
             "Trump International Hotel & Tower, New York, United States": 'images/icon/26.png',
             "First World Hotel": 'images/icon/27.png',
@@ -146,7 +146,7 @@ $(document).ready(function() {
             "CityCenter": 'images/icon/29.png',
             "Holiday Hotel Inn": 'images/icon/13.png',
             "Tour and Travel Packages": 'images/icon/14.png',
-            "City Seight Seeings": 'images/icon/15.png'
+            "City SeightSeeings": 'images/icon/15.png'
         },
         limit: 8, // The max amount of results that can be shown at once. Default: Infinity.
         onAutocomplete: function(val) {
@@ -280,14 +280,18 @@ function itemClickCounter() {
 	inputField.allowDigitsOnly();
 
 	$(".increase-btn").on("click", function (e) {
-		e.preventDefault();
+        e.preventDefault();
+        console.log('increase');
+        
 		var inputField = $(this).prev("input");
 		var currentInputValue = parseInt(inputField.val());
 		inputField.val(currentInputValue + 1);
 	});
 
 	$(".decrease-btn").on("click", function (e) {
-		e.preventDefault();
+        e.preventDefault();
+        console.log('decrease');
+        
 		var inputField = $(this).next("input");
 		var currentInputValue = parseInt(inputField.val());
 		inputField.val(currentInputValue - 1);

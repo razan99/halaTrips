@@ -13,11 +13,14 @@
     <!-- FONT-AWESOME ICON CSS -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--== ALL CSS FILES ==-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/materialize.css">
+
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/mob.css">
-    <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/kronos.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mob.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -33,7 +36,7 @@
     </div>
 
     <!-- MOBILE MENU -->
-	<section>
+    <section>
         <div class="ed-mob-menu">
             <div class="ed-mob-menu-con">
                 <div class="ed-mm-left">
@@ -241,335 +244,230 @@
 
     </section>
     <!--END HEADER SECTION-->
-	
-	<!--HEADER SECTION-->
-	<section>
-		<div class="v2-hom-search">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-					<div class="v2-ho-se-ri">
-						<h5>World's leading tour and travels template</h5>
-						<h1>Car Rentals easy now!</h1>
-						<p>Experience the various exciting tour and travel packages and Make hotel reservations, find vacation packages, search cheap hotels and events</p>
-						<div class="tourz-hom-ser v2-hom-ser">
-							<ul>
-								<li>
-									<a href="booking-tour-package.html" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><img src="images/icon/2.png" alt=""> Tour</a>
-								</li>
-								<li>
-									<a href="booking-flight.html" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><img src="images/icon/31.png" alt=""> Flight</a>
-								</li>
-								<li>
-									<a href="booking-car-rentals.html" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><img src="images/icon/30.png" alt=""> Car Rentals</a>
-								</li>
-								<li>
-									<a href="booking-hotel.html" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><img src="images/icon/1.png" alt=""> Hotel</a>
-								</li>								
-							</ul>
-						</div>
-					</div>						
-					</div>	
-					<div class="col-md-6">
-					<div class="">
-						<form class="contact__form v2-search-form" method="post" action="mail/carbooking.php">
-							<div class="alert alert-success contact__msg" style="display: none" role="alert">
-								Thank you message
-							</div>
-							<div class="row">
-								<div class="input-field col s12">
-									<input type="text"  class="validate" name="name" required>
-									<label>Enter your name</label>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s6">
-									<input type="number"  class="validate" name="phone" required>
-									<label>Enter your phone</label>
-								</div>
-								<div class="input-field col s6">
-									<input type="email"  class="validate" name="email" required>
-									<label>Enter your email</label>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s12">
-									<input type="text" id="select-city" class="autocomplete" name="pickuplocation">
-									<label for="select-city">Pick up location</label>
-								</div>
-								<div class="input-field col s12">
-									<input type="text" id="select-city-1" class="autocomplete" name="droplocation">
-									<label for="select-city">Dropping off location</label>
-								</div>								
-							</div>
-							<div class="row">
-								<div class="input-field col s6">
-									<input type="text" id="from" name="pickdate">
-									<label for="from">Pick up date</label>
-								</div>
-								<div class="input-field col s6">
-									<select name="picktime">
-										<option value="" disabled selected>Pick up time</option>
-										<option value="24:00 midnight">24:00 midnight</option>
-										<option value="01:00 AM">01:00 AM</option>
-										<option value="02:00 AM">02:00 AM</option>
-										<option value="03:00 AM">03:00 AM</option>
-										<option value="04:00 AM">04:00 AM</option>
-										<option value="05:00 AM">05:00 AM</option>
-										<option value="06:00 AM">06:00 AM</option>
-										<option value="07:00 AM">07:00 AM</option>
-										<option value="08:00 AM">08:00 AM</option>
-										<option value="09:00 AM">09:00 AM</option>
-										<option value="10:00 AM">10:00 AM</option>
-										<option value="11:00 AM">11:00 AM</option>
-										<option value="12:00 noon">12:00 noon</option>
-										<option value="13:00 PM">13:00 PM</option>
-										<option value="14:00 PM">14:00 PM</option>
-										<option value="15:00 PM">15:00 PM</option>
-										<option value="16:00 PM">16:00 PM</option>
-										<option value="17:00 PM">17:00 PM</option>
-										<option value="18:00 PM">18:00 PM</option>
-										<option value="19:00 PM">19:00 PM</option>
-										<option value="20:00 PM">20:00 PM</option>
-										<option value="21:00 PM">21:00 PM</option>
-										<option value="22:00 PM">22:00 PM</option>
-										<option value="23:00 PM">23:00 PM</option>
-										<option value="24:00 midnight">06:00 AM</option>
-									</select>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s6">
-									<input type="text" id="to" name="dropdate">
-									<label for="to">Drop off date</label>
-								</div>
-								<div class="input-field col s6">
-									<select name="droptime">
-										<option value="" disabled selected>Drop off time</option>
-										<option value="24:00 midnight">24:00 midnight</option>
-										<option value="01:00 AM">01:00 AM</option>
-										<option value="02:00 AM">02:00 AM</option>
-										<option value="03:00 AM">03:00 AM</option>
-										<option value="04:00 AM">04:00 AM</option>
-										<option value="05:00 AM">05:00 AM</option>
-										<option value="06:00 AM">06:00 AM</option>
-										<option value="07:00 AM">07:00 AM</option>
-										<option value="08:00 AM">08:00 AM</option>
-										<option value="09:00 AM">09:00 AM</option>
-										<option value="10:00 AM">10:00 AM</option>
-										<option value="11:00 AM">11:00 AM</option>
-										<option value="12:00 noon">12:00 noon</option>
-										<option value="13:00 PM">13:00 PM</option>
-										<option value="14:00 PM">14:00 PM</option>
-										<option value="15:00 PM">15:00 PM</option>
-										<option value="16:00 PM">16:00 PM</option>
-										<option value="17:00 PM">17:00 PM</option>
-										<option value="18:00 PM">18:00 PM</option>
-										<option value="19:00 PM">19:00 PM</option>
-										<option value="20:00 PM">20:00 PM</option>
-										<option value="21:00 PM">21:00 PM</option>
-										<option value="22:00 PM">22:00 PM</option>
-										<option value="23:00 PM">23:00 PM</option>
-										<option value="24:00 midnight">06:00 AM</option>
-									</select>
-								</div>
-							</div>							
-							<div class="row">
-								<div class="input-field col s6">
-									<select name="selectcar">
-										<option value="" disabled selected>Select car type</option>
-										<option value="Micro">Micro</option>
-										<option value="Mini">Mini</option>
-										<option value="Prime">Prime</option>
-										<option value="Prime SUV">Prime SUV</option>
-										<option value="Luxury Cars">Luxury Cars</option>
-										<option value="Mini Van">Mini Van</option>
-										<option value="Small Bus">Small Bus</option>
-										<option value="Luxury Bus">Luxury Bus</option>
-									</select>
-								</div>
-								<div class="input-field col s6">
-									<select name="totalpassangers">
-										<option value="" disabled selected>Total passengers</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="10">10</option>
-										<option value="15">15</option>
-										<option value="20">20</option>
-										<option value="50">50</option>
-										<option value="100">100</option>
-									</select>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s6">
-									<select name="noofadults">
-										<option value="" disabled selected>No of adults</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-									</select>
-								</div>
-								<div class="input-field col s6">
-									<select name="noofchildrens">
-										<option value="" disabled selected>No of childrens</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>											
-									</select>
-								</div>
-							</div>								
+    <div class="success-page">
+        <div class="container">
+            <div class="row">
+	  
+         
+              <!-- Steps Progress bar end --> 
+                <div class="col-lg-12 text-center ">
+                <p class="text-success text-16 line-height-07"><i class="fa fa-check-circle fa-5x"></i></p>
+                  <h2 class="text-8">Recharge Successful</h2>
+                  
+                  <p class="lead">We are processing the same and you will be notified via email.</p>
+                </div>
+                  <div class="col-md-8 col-lg-6 mx-auto">
+                    <div class="bg-light shadow-sm rounded p-3 p-sm-4 mb-4">
+                      <div class="row">
+                        <div class="col-sm text-muted">Transactions ID</div>
+                        <div class="col-sm text-sm-right font-weight-600">PHDF173076359</div>
+                      </div>            
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm text-muted">Date</div>
+                        <div class="col-sm text-sm-right font-weight-600">06-Feb-2019</div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm text-muted">Mode of Payment</div>
+                        <div class="col-sm text-sm-right font-weight-600">Credit Card</div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm text-muted">Transaction Status</div>
+                        <div class="col-sm text-sm-right font-weight-600 text-success">Success</div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm text-muted">Customer Name</div>
+                        <div class="col-sm text-sm-right font-weight-600">Johne Cary</div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm text-muted">Mobile No</div>
+                        <div class="col-sm text-sm-right font-weight-600">(+91) 9898989898</div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm text-muted">Subject</div>
+                        <div class="col-sm text-sm-right font-weight-600">Mobile Recharge</div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm text-muted">Payment Amount</div>
+                        <div class="col-sm text-sm-right text-6 font-weight-500">$135</div>
+                      </div>
+                  </div>
+                  
+                  <div class="text-center">
+                  <a href="#" class="btn-link text-muted mx-3 my-2 align-items-center d-inline-flex"><span class="text-5 mr-2"><i class="fa fa-file-pdf"></i></span>Save as PDF</a>
+                      <a href="#" class="btn-link text-muted mx-3 my-2 align-items-center d-inline-flex"><span class="text-5 mr-2"><i class="fa fa-print"></i></span>Print Receipt</a>
+                      <a href="#" class="btn-link text-muted mx-3 my-2 align-items-center d-inline-flex"><span class="text-5 mr-2"><i class="fa fa-envelope"></i></span>Email Receipt</a>
+                      <p class="mt-4 mb-0"><a href="#" class="btn btn-primary">Make another Recharge</a></p>
+                      </div>
+                      
+                      
+                </div>
+              </div>
+        </div>
+        <section class="section bg-light shadow-md pt-4 pb-3 mt-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6 col-md-3">
+                  <div class="featured-box text-center">
+                    <div class="featured-box-icon"> <i class="fa fa-lock fa-4x"></i> </div>
+                    <h4>100% Secure Payments</h4>
+                    <p>Moving your card details to a much more secured place.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <div class="featured-box text-center">
+                    <div class="featured-box-icon"> <i class="fa fa-thumbs-up  fa-4x"></i> </div>
+                    <h4>Trust pay</h4>
+                    <p>100% Payment Protection. Easy Return Policy.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <div class="featured-box text-center">
+                    <div class="featured-box-icon"> <i class="fa fa-bullhorn fa-4x"></i> </div>
+                    <h4>Refer &amp; Earn</h4>
+                    <p>Invite a friend to sign up and earn up to $100.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <div class="featured-box text-center">
+                    <div class="featured-box-icon"> <i class="fa fa-life-ring fa-4x"></i> </div>
+                    <h4>24X7 Support</h4>
+                    <p>We're here to help. Have a query and need help ? <a href="#">Click here</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </div>
 
-							<div class="row">
-								<div class="input-field col s6">
-									<select name="minprice">
-										<option value="" disabled selected>Min Price</option>
-										<option value="$200">$200</option>
-										<option value="$500">$500</option>
-										<option value="$1000">$1000</option>
-										<option value="$5000">$5000</option>
-										<option value="$10,000">$10,000</option>
-										<option value="$50,000">$50,000</option>
-									</select>
-								</div>
-								<div class="input-field col s6">
-									<select name="maxprice">
-										<option value="" disabled selected>Max Price</option>
-										<option value="$200">$200</option>
-										<option value="$500">$500</option>
-										<option value="$1000">$1000</option>
-										<option value="$5000">$5000</option>
-										<option value="$10,000">$10,000</option>
-										<option value="$50,000">$50,000</option>
-									</select>
-								</div>								
-							</div>							
-							<div class="row">
-								<div class="input-field col s12">
-									<input type="submit" value="Book Now" class="waves-effect waves-light tourz-sear-btn v2-ser-btn">
-								</div>
-							</div>
-						</form>
-					</div>						
-					</div>				
-				</div>
-			</div>
-		</div>
-	</section>
 
 	
-	<!--====== FOOTER 1 ==========-->
+    <!--====== FOOTER 1 ==========-->
+  
 	<section>
-		<div class="rows">
-			<div class="footer1 home_title tb-space">
-				<div class="pla1 container">
-					<!-- FOOTER OFFER 1 -->
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="disco">
-							<h3>30%<span>OFF</span></h3>
-							<h4>Eiffel Tower,Rome</h4>
-							<p>valid only for 24th Dec</p> <a href="booking.html">Book Now</a> </div>
-					</div>
-					<!-- FOOTER OFFER 2 -->
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="disco1 disco">
-							<h3>42%<span>OFF</span></h3>
-							<h4>Colosseum,Burj Al Arab</h4>
-							<p>valid only for 18th Nov</p> <a href="booking.html">Book Now</a> </div>
-					</div>
-					<!-- FOOTER MOST POPULAR VACATIONS -->
-					<div class="col-md-6 col-sm-12 col-xs-12 foot-spec footer_places">
-						<h4><span>Most Popular</span> Vacations</h4>
-						<ul>
-							<li><a href="tour-details.html">Angkor Wat</a> </li>
-							<li><a href="tour-details.html">Buckingham Palace</a> </li>
-							<li><a href="tour-details.html">High Line</a> </li>
-							<li><a href="tour-details.html">Sagrada Família</a> </li>
-							<li><a href="tour-details.html">Statue of Liberty </a> </li>
-							<li><a href="tour-details.html">Notre Dame de Paris</a> </li>
-							<li><a href="tour-details.html">Taj Mahal</a> </li>
-							<li><a href="tour-details.html">The Louvre</a> </li>
-							<li><a href="tour-details.html">Tate Modern, London</a> </li>
-							<li><a href="tour-details.html">Gothic Quarter</a> </li>
-							<li><a href="tour-details.html">Table Mountain</a> </li>
-							<li><a href="tour-details.html">Bayon</a> </li>
-							<li><a href="tour-details.html">Great Wall of China</a> </li>
-							<li><a href="tour-details.html">Hermitage Museum</a> </li>
-							<li><a href="tour-details.html">Yellowstone</a> </li>
-							<li><a href="tour-details.html">Musée d'Orsay</a> </li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--====== FOOTER 2 ==========-->
-	<section>
-		<div class="rows">
-			<div class="footer">
-				<div class="container">
-					<div class="foot-sec2">
-						<div>
-							<div class="row">
-								<div class="col-sm-3 foot-spec foot-com">
-									<h4><span>Holiday</span> Tour & Travels</h4>
-									<p>World's leading tour and travels Booking website,Over 30,000 packages worldwide.</p>
-								</div>
-								<div class="col-sm-3 foot-spec foot-com">
-									<h4><span>Address</span> & Contact Info</h4>
-									<p>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A. Landmark : Next To Airport</p>
-									<p> <span class="strong">Phone: </span> <span class="highlighted">+101-1231-1231</span> </p>
-								</div>
-								<div class="col-sm-3 col-md-3 foot-spec foot-com">
-									<h4><span>SUPPORT</span> & HELP</h4>
-									<ul class="two-columns">
-										<li> <a href="#">About Us</a> </li>
-										<li> <a href="#">FAQ</a> </li>
-										<li> <a href="#">Feedbacks</a> </li>
-										<li> <a href="#">Blog </a> </li>
-										<li> <a href="#">Use Cases</a> </li>
-										<li> <a href="#">Advertise us</a> </li>
-										<li> <a href="#">Discount</a> </li>
-										<li> <a href="#">Vacations</a> </li>
-										<li> <a href="#">Branding Offers </a> </li>
-										<li> <a href="#">Contact Us</a> </li>
-									</ul>
-								</div>
-								<div class="col-sm-3 foot-social foot-spec foot-com">
-									<h4><span>Follow</span> with us</h4>
-									<p>Join the thousands of other There are many variations of passages of Lorem Ipsum available</p>
-									<ul>
-										<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
-										<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
-										<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
-										<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
-										<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a> </li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--====== FOOTER - COPYRIGHT ==========-->
-	<section>
-		<div class="rows copy">
-			<div class="container">
-				<p>Copyrights © 2017 Company Name. All Rights Reserved</p>
-			</div>
-		</div>
-	</section>
+        <div class="rows">
+            <div class="footer1 home_title tb-space">
+                <div class="pla1 container">
+                    <div class="row">
+
+                   
+                    <!-- FOOTER OFFER 1 -->
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="disco" style="background-image: url(https://www.hala-arab.com/images/antalya/ant.jpg);">
+                            <div class="overlay">
+                                <h3>30%<span>OFF</span></h3>
+                                <h4>Eiffel Tower,Rome</h4>
+                                <p>valid only for 24th Dec</p> <a href="booking.html">Book Now</a>
+                            </div>
+   
+                        </div>
+                    </div>
+                    <!-- FOOTER OFFER 2 -->
+                    <div class="col-md-3 col-sm-6 col-12">
+                        <div class="disco1 disco" style="background-image: url(https://www.hala-arab.com/images/istanbul/istanbul.jpg);">
+                           <div class="overlay">
+                            <h3>42%<span>OFF</span></h3>
+                            <h4>Colosseum,Burj Al Arab</h4>
+                            <p>valid only for 18th Nov</p> <a href="booking.html">Book Now</a>
+                           </div>
+                        </div>
+                    </div>
+                    <!-- FOOTER MOST POPULAR VACATIONS -->
+                    <div class="col-md-6 col-sm-12 col-12 foot-spec footer_places">
+                        <h4><span>Most Popular</span> Vacations</h4>
+                        <ul>
+                            <li><a href="packages.html">Angkor Wat</a> </li>
+                            <li><a href="packages.html">Buckingham Palace</a> </li>
+                            <li><a href="packages.html">High Line</a> </li>
+                            <li><a href="packages.html">Sagrada Família</a> </li>
+                            <li><a href="packages.html">Statue of Liberty </a> </li>
+                            <li><a href="packages.html">Notre Dame de Paris</a> </li>
+                            <li><a href="packages.html">Taj Mahal</a> </li>
+                            <li><a href="packages.html">The Louvre</a> </li>
+                            <li><a href="packages.html">Tate Modern, London</a> </li>
+                            <li><a href="packages.html">Gothic Quarter</a> </li>
+                            <li><a href="packages.html">Table Mountain</a> </li>
+                            <li><a href="packages.html">Bayon</a> </li>
+                            <li><a href="packages.html">Great Wall of China</a> </li>
+                            <li><a href="packages.html">Hermitage Museum</a> </li>
+                            <li><a href="packages.html">Yellowstone</a> </li>
+                            <li><a href="packages.html">Musée d'Orsay</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--====== FOOTER 2 ==========-->
+    <section>
+        <div class="rows">
+            <div class="footer">
+                <div class="container">
+                    <div class="foot-sec2">
+                        <div>
+                            <div class="row">
+                                <div class="col-sm-3 foot-spec foot-com">
+                                    <h4><span>Holiday</span> Tour & Travels</h4>
+                                    <p>World's leading tour and travels Booking website,Over 30,000 packages worldwide.
+                                    </p>
+                                </div>
+                                <div class="col-sm-3 foot-spec foot-com">
+                                    <h4><span>Address</span> & Contact Info</h4>
+                                    <p>28800 Orchard Lake Road, Suite 180 Farmington Hills, U.S.A. Landmark : Next To
+                                        Airport</p>
+                                    <p> <span class="strong">Phone: </span> <span
+                                            class="highlighted">+101-1231-1231</span> </p>
+                                </div>
+                                <div class="col-sm-3 col-md-3 foot-spec foot-com">
+                                    <h4><span>SUPPORT</span> & HELP</h4>
+                                    <ul class="two-columns">
+                                        <li> <a href="#">About Us</a> </li>
+                                        <li> <a href="#">FAQ</a> </li>
+                                        <li> <a href="#">Feedbacks</a> </li>
+                                        <li> <a href="#">Blog </a> </li>
+                                        <li> <a href="#">Use Cases</a> </li>
+                                        <li> <a href="#">Advertise us</a> </li>
+                                        <li> <a href="#">Discount</a> </li>
+                                        <li> <a href="#">Vacations</a> </li>
+                                        <li> <a href="#">Branding Offers </a> </li>
+                                        <li> <a href="#">Contact Us</a> </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-3 foot-social foot-spec foot-com">
+                                    <h4><span>Follow</span> with us</h4>
+                                    <p>Join the thousands of other There are many variations of passages of Lorem Ipsum
+                                        available</p>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> </li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </li>
+                                        <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--====== FOOTER - COPYRIGHT ==========-->
+    <section>
+        <div class="rows copy">
+            <div class="container">
+                <p>Copyrights © 2018 Company Name. All Rights Reserved</p>
+            </div>
+        </div>
+    </section>
 	<section>
 		<div class="icon-float">
 			<ul>
@@ -585,12 +483,14 @@
 	</section>
 	<!--========= Scripts ===========-->
 	<script src="js/jquery-latest.min.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.js"></script>
+
 	<script src="js/wow.min.js"></script>
-	<script src="js/materialize.min.js"></script>
-	<script src="js/mail.js"></script>
+	<script src="js/kronos.js"></script>
+
 	<script src="js/custom.js"></script>
+	
+
 </body>
 
 </html>
