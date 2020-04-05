@@ -32,7 +32,7 @@
         display:none;
     }
      .ed-mob-menu{
-        display:block;
+        display:block !important;
     }
      .offer-r {
          display: none;
