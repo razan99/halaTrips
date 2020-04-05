@@ -8023,7 +8023,7 @@ align-items: center;
     border-radius: 4px;
     padding-left: 39px;
     font-size: 15px !important;
-    height: 50px;
+    height: 40px;
     color: #222;
 }
 .hotels-search .input-field >  label {
@@ -8052,10 +8052,10 @@ align-items: center;
 
 .list-dropdown-passengers {
     list-style: none;
-    position: absolute;
+    position: absolute !important;
     z-index: 10;
     top: 60px;
-    padding: 20px;
+    padding: 20px 10px;
     width: 250px;
     opacity: 0;
     visibility: hidden;
@@ -8074,24 +8074,49 @@ align-items: center;
       display: flex;
       margin-top: 5px;
       border-top: none; }
-  
+  .list-persons-count-parent h6{
+      font-size: 14px;
+      color: #777;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+  }
+  .list-persons-count-parent ul {
+    margin-top: 0;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px 15px;
+    float: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
   /* List Persons Count */
   .list-persons-count {
     list-style: none;
     padding-bottom: 5px; }
     .list-persons-count > li {
-      display: flex;
-      align-items: center; }
+      display: flex !important;
+      align-items: center;
+      float: none !important;
+        margin-bottom: 10px;;
+      justify-content: space-between !important;
+      width: 100%;
+      align-items: center;
+    }
       .list-persons-count > li + li {
         margin-top: 5px; }
       .list-persons-count > li > span:first-child {
         margin-right: auto;
-        color: #222; }
+        color: #222;
+        font-size: 15px;
+    }
   
   /* Counter Add Item */
   .counter-add-item {
     display: flex;
-    align-items: center; }
+    align-items: center;
+  }
     .counter-add-item > * {
       display: flex;
       align-items: center;
@@ -8099,8 +8124,8 @@ align-items: center;
       height: 50px;
       width: 50px; }
     .counter-add-item a {
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
       font-size: 20px;
       font-weight: 400;
       border: 1px solid #5091fa;
@@ -8135,6 +8160,23 @@ align-items: center;
     list-style: none; 
    
 
+}
+a.btn-reservation-add {
+    color: #333 !important;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.06);
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
     .list-select-grade li + li {
       margin-top: 3px; }
@@ -8600,3 +8642,27 @@ align-items: center;
         margin-bottom: 10px;
         color: #555;
     }
+    .payment-page ,
+    .success-page{
+        background: #f5f5f5;
+        padding-top: 70px ;
+    }
+
+    .payment-page .bg-light ,
+    .success-page .bg-light{
+        background: #fff !important
+    }
+    .payment-page .bg-light-2 ,
+    .success-page .bg-light-2 {
+        background-color: #f8f8fa !important;
+    }
+
+    .payment-page .form-control:not(.form-control-sm) {
+    padding: .810rem .96rem;
+    height: inherit;
+}
+.payment-page .custom-select:not(.custom-select-sm) {
+    height: calc(3.05rem + 2px);
+    padding-top: .700rem;
+    padding-bottom: .700rem;
+}
