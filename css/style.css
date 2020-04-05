@@ -4384,7 +4384,7 @@ fieldset, label {
 }
 .tourz-sear-btn {
     height: 50px;
-    line-height: 45px;
+    line-height: 50px;
     background: #e67e22;
     background: linear-gradient(to bottom,#e67e22,#e67e22);
     outline: none;
@@ -4392,6 +4392,7 @@ fieldset, label {
     display: block !important;
     color: #fff;
     font-weight: 600;
+    border-radius: 5px;
     
     text-transform: uppercase;
 }
@@ -6589,10 +6590,10 @@ html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:activ
     position: fixed;
     width: 70%;
     background: #fff;
-    padding: 50px;
+    padding: 50px 30px;
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.32);
     overflow-y: auto;
-    right: -80%;
+    left: -80%;
     height: 100%;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -6600,7 +6601,7 @@ html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:activ
     transition:all 0.5s ease;
 }
 .ed-mm-act{
-    right: 0%;
+    left: 0%;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -8023,8 +8024,10 @@ align-items: center;
     border-radius: 4px;
     padding-left: 39px;
     font-size: 15px !important;
-    height: 40px;
+    height: 50px;
     color: #222;
+    width: 100%;
+
 }
 .hotels-search .input-field >  label {
     left: 35px;
@@ -8262,6 +8265,7 @@ a.btn-reservation-add {
         font-weight: bold;
         top: 0;
         padding: 0 5px;
+        position: absolute;
     }
 
     .kronos-date-body table tbody tr td {
@@ -8665,4 +8669,7 @@ a.btn-reservation-add {
     height: calc(3.05rem + 2px);
     padding-top: .700rem;
     padding-bottom: .700rem;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0.2rem rgba(230, 126, 34, 0.25);
 }
