@@ -13,11 +13,12 @@
     <!-- FONT-AWESOME ICON CSS -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--== ALL CSS FILES ==-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/materialize.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/mob.css">
     <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/mob.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -377,45 +378,38 @@
 			<div class="tr-regi-form">
 				<h4>Create an Account</h4>
 				<p>It's free and always will be.</p>
-				<form class="col s12">
+				<form class="">
 					<div class="row">
-						<div class="input-field col m6 s12">
-							<input type="text" class="validate">
-							<label>First Name</label>
-						</div>
-						<div class="input-field col m6 s12">
-							<input type="text" class="validate">
-							<label>Last Name</label>
-						</div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Full Name</label>
+
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Email</label>
+
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Password</label>
+
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+					
+						
 					</div>
-					<div class="row">
-						<div class="input-field col s12">
-							<input type="number" class="validate">
-							<label>Mobile</label>
-						</div>
-					</div>
-					<div class="row">
-						<div class="input-field col s12">
-							<input type="email" class="validate">
-							<label>Email</label>
-						</div>
-					</div>
-					<div class="row">
-						<div class="input-field col s12">
-							<input type="password" class="validate">
-							<label>Password</label>
-						</div>
-					</div>
-					<div class="row">
-						<div class="input-field col s12">
-							<input type="password" class="validate">
-							<label>Confirm Password</label>
-						</div>
-					</div>
-					<div class="row">
-						<div class="input-field col s12">
-							<input type="submit" value="submit" class="waves-effect waves-light btn-large full-btn"> </div>
-					</div>
+				
+					
+				
+						<div class="form-group">
+							<button type="submit" class="btn btn-large full-btn">submit</button> </div>
+					
 				</form>
 				<p>Are you a already member ? <a href="login.html">Click to Login</a>
 				</p>
@@ -544,7 +538,6 @@
 	<script src="js/jquery-latest.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/wow.min.js"></script>
-	<script src="js/materialize.min.js"></script>
 	<script src="js/custom.js"></script>
 </body>
 
