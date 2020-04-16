@@ -5096,7 +5096,7 @@ fieldset, label {
     margin-bottom: 8px;
 }
 .tr-regi-form h4 span {
-    color: #e92b44;
+    color: #e67e22;
     font-size: 42px;
     font-weight: 600;
 }
@@ -6466,7 +6466,7 @@ html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:activ
     overflow: hidden;
     width: 100%;
     box-shadow: 0px 7px 12px -4px rgba(0, 0, 0, 0.45);
-    /* background: url('../images/mm-col-bg.png') no-repeat right bottom, #fff; */
+  background:  #fff; 
     z-index: 999;
     margin-top: -7px;
     padding: 20px 10px;
@@ -8179,14 +8179,15 @@ align-items: center;
       height: 50px;
       width: 50px; }
     .counter-add-item a {
-      width: 25px;
-      height: 25px;
-      font-size: 20px;
-      font-weight: 400;
-      border: 1px solid #5091fa;
-      border-radius: 5px;
-      color: #5091fa;
-      background: #fff; }
+        min-width: 20px;
+        height: 20px;
+        font-size: 18px;
+        font-weight: 400;
+        border: 1px solid #5091fa;
+        border-radius: 5px;
+        color: #5091fa;
+        background: #fff;
+        width: 20px; }
       .counter-add-item a:hover {
         background-color: #5091fa;
         color: #fff; }
@@ -8959,4 +8960,38 @@ a.btn-reservation-add {
     margin-bottom: 40px;
     display: flex;
     justify-content: flex-end;
+}
+.kronos-date-body table tbody tr td.disabled button {
+    cursor: no-drop;
+}
+.custom-package-form{
+
+}
+.custom-package-form {
+    max-width: 700px;
+    padding: 50px 10px;
+}
+
+.custom-package-form label {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 3px;
+}
+
+.custom-package-form select , .custom-package-form input {
+    height: 40px;
+}
+
+.custom-package-form .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.custom-package-form .button button {
+    max-width: 200px;
+    padding: 10px;
+    font-size: 20px !important;
+    background: #e67e22;
+    border-color: #e67e22;
 }
