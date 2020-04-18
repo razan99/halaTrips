@@ -1,0 +1,285 @@
+<script>
+    var map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10,
+            center: new google.maps.LatLng(2.8, -187.3),
+            mapTypeId: 'terrain'
+        });
+
+        var script = document.createElement('script');
+
+        script.src = 'https://developers.google.com/maps/documentation/javascript/examples/json/earthquake_GeoJSONP.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+    }
+
+
+    window.eqfeed_callback = function (results) {
+        for (var i = 0; i < results.features.length; i++) {
+            var coords = results.features[i].geometry.coordinates;
+            var latLng = new google.maps.LatLng(coords[1], coords[0]);
+            var marker = new google.maps.Marker({
+                position: latLng,
+                map: map,
+                icon: 'assets/marker.png'
+            });
+        }
+    }
+</script>
+
+
+
+<script>
+    // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        var uluru = {
+            lat: -25.344,
+            lng: 131.036
+        };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById('map'), {
+            zoom: 4,
+            center: uluru,
+            icon: 'assets/marker.png'
+        });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({ position: uluru, map: map });
+    }
+</script>
+
+
+
+<div class="popup-content">
+    <!---->
+    <!---->
+    <div class="img-container">
+        <div class="map-image"
+            style="background: url(&quot;https://i.travelapi.com/hotels/8000000/7550000/7540900/7540834/0a5a6406_z.jpg&quot;) center center / cover;">
+        </div>
+    </div>
+    <div class="details">
+        <div class="name"> Hampton by Hilton Kayasehir <span
+                class="stars">
+                <!---->
+                <!---->★</span></div>
+        <div class="map-review">
+            <div class="review-score">
+                <div class="c-score">
+                    <div class="score-badge"> 0 </div>
+                    <div class="score-content">
+                        <div aria-label="Very Good" class="score-title">Very Good</div>
+                        <div class="score-text">390 Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-price">
+            <div class="price-start"> Price start from </div>
+            <div class="price"> $43.91 </div>
+            <div class="benefits"> complimentary breakfast </div>
+        </div>
+    </div>
+    <!---->
+    <!----> $43.91
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+    function initMap() {
+        var uluru = { lat: -25.363, lng: 131.044 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+        });
+
+        var contentString = `
+        
+        <a href="https://facebook.com" target="_blank" id="content">
+            <div class="popup-content">
+<!---->
+<!---->
+<div class="img-container">
+    <div class="map-image"
+        style="background: url(&quot;https://i.travelapi.com/hotels/8000000/7550000/7540900/7540834/0a5a6406_z.jpg&quot;) center center / cover;">
+    </div>
+</div>
+<div class="details">
+    <div class="name"> Hampton by Hilton Kayasehir <span
+            class="stars">
+            <!---->
+            <!---->★</span></div>
+    <div class="map-review">
+        <div class="review-score">
+            <div class="c-score">
+                <div class="score-badge"> 0 </div>
+                <div class="score-content">
+                    <div aria-label="Very Good" class="score-title">Very Good</div>
+                    <div class="score-text">390 Reviews</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="map-price">
+        <div class="price-start"> Price start from </div>
+        <div class="price"> $43.91 </div>
+        <div class="benefits"> complimentary breakfast </div>
+    </div>
+</div>
+<!---->
+<!----> $43.91
+</div>
+            </a>`;
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+            title: 'Uluru (Ayers Rock)'
+        });
+        marker.addListener('click', function () {
+            infowindow.open(map, marker);
+        });
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    var map;
+
+    // // The JSON data
+    // var json =  [{"id":48,"title":"Helgelandskysten","longitude":"12.63376","latitude":"66.02219"},{"id":46,"title":"Tysfjord","longitude":"16.50279","latitude":"68.03515"},{"id":44,"title":"Sledehunds-ekspedisjon","longitude":"7.53744","latitude":"60.08929"},{"id":43,"title":"Amundsens sydpolferd","longitude":"11.38411","latitude":"62.57481"},{"id":39,"title":"Vikingtokt","longitude":"6.96781","latitude":"60.96335"},{"id":6,"title":"Tungtvann- sabotasjen","longitude":"8.49139","latitude":"59.87111"}];
+
+
+    function initMap() {
+
+        // iving the map som options
+    
+
+        $.getJSON("data.json", function (json) {
+            var mapOptions = {
+            zoom: 15,
+            center: new google.maps.LatLng(json.data.hotels[0].latitude, json.data.hotels[0].longitude)
+        };
+
+        // Creating the map
+        map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+            console.log(json.data.hotels[1000]); // this will show the info it in firebug console
+            for (i in json.data.hotels) {
+
+                
+                var obj = json.data.hotels[i];
+                console.log(obj);
+
+
+                // Adding a new marker for the object
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(obj.latitude, obj.longitude),
+                    map: map,
+                    title: obj.title , // this works, giving the marker a title with the correct title,
+                    icon:'assets/marker.png'
+                });
+
+                // Adding a new info window for the object
+
+                var contentString = `
+    
+    <a href="https://facebook.com" target="_blank" id="content">
+        <div class="popup-content">
+<!---->
+<!---->
+<div class="img-container">
+<div class="map-image"
+    style="background: url(&quot;https://i.travelapi.com/hotels/8000000/7550000/7540900/7540834/0a5a6406_z.jpg&quot;) center center / cover;">
+</div>
+</div>
+<div class="details">
+<div class="name"> Hampton by Hilton Kayasehir <span
+        class="stars">
+        <!---->
+        <!---->★</span></div>
+<div class="map-review">
+    <div class="review-score">
+        <div class="c-score">
+            <div class="score-badge"> 0 </div>
+            <div class="score-content">
+                <div aria-label="Very Good" class="score-title">Very Good</div>
+                <div class="score-text">390 Reviews</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="map-price">
+    <div class="price-start"> Price start from </div>
+    <div class="price"> $43.91 </div>
+    <div class="benefits"> complimentary breakfast </div>
+</div>
+</div>
+<!---->
+<!----> $43.91
+</div>
+        </a>`;
+
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+    
+    marker.addListener('click', function () {
+        infowindow.open(map, marker);
+    });
+
+
+
+            } // end loop
+        });
+        // Looping through all the entries from the JSON data
+
+
+
+        // Adding a new click event listener for the object
+
+
+
+
+
+
+
+
+
+
+    }
+
+// Initialize the map
+
+</script>

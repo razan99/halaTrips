@@ -15,6 +15,7 @@
     <!--== ALL CSS FILES ==-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/mob.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -49,15 +50,27 @@
                             <a href="#!" class="ed-mi-close"><i class="fa fa-times"></i></a>
 
                             <ul>
-                                <li><a href="all-package.html"><h5>Home</h5></a></li>
-                                <li><a href="honeymoon-package.html"><h5>hotels</h5></a></li>
-                                <li><a href="group-package.html"><h5>SeightSeeing</h5></a></li>
-                                <li><a href="group-package.html"><h5>Packages</h5></a></li>
-                                <li><a href="group-package.html"><h5>About us</h5></a></li>
-                                <li><a href="group-package.html"><h5>Contact Us</h5></a></li>
+                                <li><a href="all-package.html">
+                                        <h5>Home</h5>
+                                    </a></li>
+                                <li><a href="honeymoon-package.html">
+                                        <h5>hotels</h5>
+                                    </a></li>
+                                <li><a href="group-package.html">
+                                        <h5>SeightSeeing</h5>
+                                    </a></li>
+                                <li><a href="group-package.html">
+                                        <h5>Packages</h5>
+                                    </a></li>
+                                <li><a href="group-package.html">
+                                        <h5>About us</h5>
+                                    </a></li>
+                                <li><a href="group-package.html">
+                                        <h5>Contact Us</h5>
+                                    </a></li>
 
                             </ul>
-                          
+
                         </div>
                     </div>
                 </div>
@@ -243,9 +256,9 @@
                                                     <label for="select-search" class="search-hotel-type">Going To</label>
                                                 </div>
                                             </div>
-                                   
-                               
-                                      
+
+
+
 
 
 
@@ -271,120 +284,97 @@
                                     </form>
                                 </div>
                                 <div class="tab-pane fade" id="hotels" role="tabpanel" aria-labelledby="hotels-tab">
-                                    <form class="tourz-search-form">
+                                	<form class="tourz-search-form">
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <div class="input-field">
                                                     <div class="icon">
                                                         <i class="fa fa-map-marker"></i>
                                                     </div>
-                                                    <input type="text" id="select-search" class="autocomplete">
+                                                    <input type="text" id="select-search" class="form-control autocomplete">
                                                     <label for="select-search" class="search-hotel-type">Going To</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="input-field">
-                                                    <div class="icon"><i class="fa  fa-calendar"
-                                                            aria-hidden="true"></i></div>
-                                                    <input type="text" id="from" name="arrival" readonly>
+                                                    <div class="icon"><i class="fa fa-6 fa-calendar-o" aria-hidden="true"></i></div>
+                                                    <input type="text" id="kronos1"  class="form-control">
+            
                                                     <label for="from">Arrival Date</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-2">
                                                 <div class="input-field">
                                                     <div class="icon">
-                                                        <i class="fa  fa-calendar"
-                                                            aria-hidden="true"></i>
+                                                        <i class="fa fa-6 fa-calendar" aria-hidden="true"></i>
                                                     </div>
-                                                    <input type="text" id="to" name="departure" readonly>
+                                                    <input type="text" id="kronos2" class="form-control">
                                                     <label for="to">Departure Date</label>
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
                                                 <div class="input-field">
                                                     <div class="icon">
-                                                        <i class="fa fa-bed" aria-hidden="true"></i>
+                                                        <i class="fa fa-6 fa-users" aria-hidden="true"></i>
                                                     </div>
-                                                    <input type="text" name="departure"
-                                                        class="show-dropdown-passengers">
+                                                    <input type="text"  class="show-dropdown-passengers" class="form-control" >
                                                     <label for="to">Travelers</label>
-                                                    <ul class="list-dropdown-passengers">
-                                                        <li>
-                                                            <ul class="list-persons-count">
-                                                                <li>
-                                                                    <span>Adults:</span>
-                                                                    <div class="counter-add-item">
-                                                                        <a class="decrease-btn"
-                                                                            href="javascript:;">-</a>
-                                                                        <input type="text" value="1">
-                                                                        <a class="increase-btn"
-                                                                            href="javascript:;">+</a>
-                                                                    </div><!-- .counter-add-item end -->
-                                                                </li>
-                                                                <li>
-                                                                    <span>Childs:</span>
-                                                                    <div class="counter-add-item">
-                                                                        <a class="decrease-btn"
-                                                                            href="javascript:;">-</a>
-                                                                        <input type="text" value="0">
-                                                                        <a class="increase-btn"
-                                                                            href="javascript:;">+</a>
-                                                                    </div><!-- .counter-add-item end -->
-                                                                </li>
-                                                            </ul><!-- .list-persons-count end -->
-                                                        </li>
-                                                        <li>
-                                                            <ul class="list-select-grade">
-                                                                <li>
-                                                                    <div class="custom-control custom-checkbox">
-                                                                        <input type="checkbox"
-                                                                            class="custom-control-input"
-                                                                            id="customCheck1">
-                                                                        <label class="custom-control-label"
-                                                                            for="customCheck1">Check this custom
-                                                                            checkbox</label>
-                                                                    </div>
-                                                                <li>
-                                                                    <div class="custom-control custom-checkbox">
-                                                                        <input type="checkbox"
-                                                                            class="custom-control-input"
-                                                                            id="customCheck1">
-                                                                        <label class="custom-control-label"
-                                                                            for="customCheck1">checkbox</label>
-                                                                    </div>
-                                                                </li>
-
-                                                            </ul><!-- .list-select-grade end -->
-                                                        </li>
-
-                                                        <li>
-                                                            <a class="btn-reservation-passengers">Done</a>
-                                                        </li>
-                                                    </ul>
+                                                    <div class="list-dropdown-passengers">
+                                                        <div class="list-dropdown-passengers-inner">
+                                                            <div class="list-persons-count-parent">
+                                                                <h6>room 1</h6>
+                                                                <ul class="list-persons-count">
+                                                                    <li>
+                                                                        <span>Adults:</span>
+                                                                        <div class="counter-add-item">
+                                                                            <a class="decrease-btn" href="javascript:;">-</a>
+                                                                            <input type="text" value="1">
+                                                                            <a class="increase-btn" href="javascript:;">+</a>
+                                                                        </div><!-- .counter-add-item end -->
+                                                                    </li>
+                                                                    <li>
+                                                                        <span>Childs:</span>
+                                                                        <div class="counter-add-item">
+                                                                            <a class="decrease-btn" href="javascript:;">-</a>
+                                                                            <input type="text" value="0">
+                                                                            <a class="increase-btn" href="javascript:;">+</a>
+                                                                        </div><!-- .counter-add-item end -->
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                
+                                                        
+                                                            <a class="btn-reservation-add" id="btn-reservation-add">Add room</a>
+                                                    <a class="btn-reservation-passengers">Done</a>
+                                    
+                                               
+                                                    
+                                                    </div>
+                                                
                                                 </div>
                                             </div>
-
-
-
-
-
-
-
+                
+                
+                
+                
+                
+                
+                
                                             <div class="col-md">
                                                 <div class="input-field">
-
-
-
-                                                    <button type="submit"
-                                                        class="waves-effect waves-light tourz-sear-btn"><i
+                
+                
+                
+                                                    <button type="submit" class="waves-effect waves-light tourz-sear-btn"><i
                                                             class="fa fa-search" aria-hidden="true"></i></button>
                                                 </div>
                                             </div>
                                         </div>
-
-
-
-
+                
+                
+                
+                
                                     </form>
                                 </div>
                             </div>
@@ -699,7 +689,7 @@
                 </div>
                 <!-- <p>World's leading tour and travels Booking website,Over 30,000 packages worldwide. Book travel packages and enjoy your holidays with distinctive experience</p> -->
             </div>
-            <div class="row tourb2-ab-p1">
+            <div class="row tourb2-ab-p1 align-items-center">
                 <div class="col-md-6 col-sm-6">
                     <div class="tourb2-ab-p1-left">
                         <h3>Hi! Welcome to Holiday Tour & Travels</h3> <span>Duis pretium gravida nisi, ut pulvinar
@@ -711,21 +701,22 @@
                             auctor semper erat porta dictum.</p>
                         <p>Fusce velit sem, vestibulum ac enim ut, tincidunt pretium augue. Vestibulum purus sapien,
                             porttitor a porta faucibus, hendrerit eget enim.</p> <a href="group-package.html"
-                            class="link-btn">تصفح حزمنا المميزه
+                            class="link-btn">
+                            Browse our featured packages
 
                         </a>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
-                    <div class="tourb2-ab-p1-right"> <img src="https://www.hala-arab.com/images/antalya/ant.jpg"
+                    <div class="tourb2-ab-p1-right"> <img src="images/packages-service.jpeg"
                             alt="" /> </div>
                 </div>
             </div>
-            <div class="row tourb2-ab-p1">
+            <div class="row tourb2-ab-p1 align-items-center">
 
                 <div class="col-md-6 col-sm-6">
                     <div class="tourb2-ab-p1-right"> <img
-                            src="https://momblogsociety.com/wp-content/uploads/2019/03/hotels.jpg" alt="" /> </div>
+                            src="images/hotels-service.jpeg" alt="" /> </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
                     <div class="tourb2-ab-p1-left">
@@ -737,8 +728,7 @@
                             sit amet cursus felis. Etiam venenatis auctor metus, et lacinia elit dignissim non. Aenean
                             auctor semper erat porta dictum.</p>
                         <p>Fusce velit sem, vestibulum ac enim ut, tincidunt pretium augue. Vestibulum purus sapien,
-                            porttitor a porta faucibus, hendrerit eget enim.</p> <a href="#" class="link-btn">احجز فندقك
-                            الان </a>
+                            porttitor a porta faucibus, hendrerit eget enim.</p> <a href="#" class="link-btn">Book your hotel now</a>
                     </div>
                 </div>
             </div>
@@ -897,49 +887,92 @@
                 <!--====== TESTIMONIALS ======-->
                 <div class="row">
 
-
-                    <div class="col-md-6">
-                        <div class="p-tesi">
-                            <div class="row">
-
-
-                                <div class="col-md-3 col-sm-3"> <img src="images/testi_img.png" alt=""> </div>
-                                <div class="col-md-9 col-sm-9">
-                                    <h4>Best tour package forever</h4>
-                                    <div><span class="tour_star"><i class="fa fa-star" aria-hidden="true"></i><i
-                                                class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                                aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-                                                class="fa fa-star-half-o" aria-hidden="true"></i></span> </div>
-                                    <p>Praesent rutrum convallis nisl vitae aliquam. Suspendisse non quam vehicula,
-                                        tincidunt
-                                        nibh at, porta orci. Maecenas egestas</p>
-                                    <address>Illinois, USA</address>
+                    <div class="owl-carousel">
+                        <div class="item px-3">
+                            <div class="p-tesi">
+                                <div class="row">
+    
+    
+                                    <div class="col-md-3 col-sm-3"> <img src="images/testi_img.png" alt=""> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <h4>Best tour package forever</h4>
+                                        <div><span class="tour_star"><i class="fa fa-star" aria-hidden="true"></i><i
+                                                    class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                                                    class="fa fa-star-half-o" aria-hidden="true"></i></span> </div>
+                                        <p>Praesent rutrum convallis nisl vitae aliquam. Suspendisse non quam vehicula,
+                                            tincidunt
+                                            nibh at, porta orci. Maecenas egestas</p>
+                                        <address>Illinois, USA</address>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item px-3">
+                            <div class="p-tesi">
+                                <div class="row">
+    
+    
+                                    <div class="col-md-3 col-sm-3"> <img src="images/testi_img.png" alt=""> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <h4>Best tour package forever</h4>
+                                        <div><span class="tour_star"><i class="fa fa-star" aria-hidden="true"></i><i
+                                                    class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                                                    class="fa fa-star-half-o" aria-hidden="true"></i></span> </div>
+                                        <p>Praesent rutrum convallis nisl vitae aliquam. Suspendisse non quam vehicula,
+                                            tincidunt
+                                            nibh at, porta orci. Maecenas egestas</p>
+                                        <address>Illinois, USA</address>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item px-3">
+                            <div class="p-tesi">
+                                <div class="row">
+    
+    
+                                    <div class="col-md-3 col-sm-3"> <img src="images/testi_img.png" alt=""> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <h4>Best tour package forever</h4>
+                                        <div><span class="tour_star"><i class="fa fa-star" aria-hidden="true"></i><i
+                                                    class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                                                    class="fa fa-star-half-o" aria-hidden="true"></i></span> </div>
+                                        <p>Praesent rutrum convallis nisl vitae aliquam. Suspendisse non quam vehicula,
+                                            tincidunt
+                                            nibh at, porta orci. Maecenas egestas</p>
+                                        <address>Illinois, USA</address>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item px-3">
+                            <div class="p-tesi">
+                                <div class="row">
+    
+    
+                                    <div class="col-md-3 col-sm-3"> <img src="images/testi_img.png" alt=""> </div>
+                                    <div class="col-md-9 col-sm-9">
+                                        <h4>Best tour package forever</h4>
+                                        <div><span class="tour_star"><i class="fa fa-star" aria-hidden="true"></i><i
+                                                    class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
+                                                    aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
+                                                    class="fa fa-star-half-o" aria-hidden="true"></i></span> </div>
+                                        <p>Praesent rutrum convallis nisl vitae aliquam. Suspendisse non quam vehicula,
+                                            tincidunt
+                                            nibh at, porta orci. Maecenas egestas</p>
+                                        <address>Illinois, USA</address>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--====== TESTIMONIALS ======-->
-                    <!--====== TESTIMONIALS ======-->
-                    <div class="col-md-6">
-                        <div class="p-tesi">
-                            <div class="row">
-
-
-                                <div class="col-md-3 col-sm-3"> <img src="images/testi_img.png" alt=""> </div>
-                                <div class="col-md-9 col-sm-9">
-                                    <h4>Best tour package forever</h4>
-                                    <div><span class="tour_star"><i class="fa fa-star" aria-hidden="true"></i><i
-                                                class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star"
-                                                aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i
-                                                class="fa fa-star-half-o" aria-hidden="true"></i></span> </div>
-                                    <p>Suspendisse tortor lacus, sodales nec elementum id, lobortis in arcu. Praesent
-                                        sit amet
-                                        purus mi. Praesent rutrum convallis.</p>
-                                    <address>Perth, Australia</address>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        
+         
+                      
+                 
                     <!--====== TESTIMONIALS ======-->
                 </div>
             </div>
@@ -1071,6 +1104,7 @@
     <!--========= Scripts ===========-->
     <script src="js/jquery-latest.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
 </body>

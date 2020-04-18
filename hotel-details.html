@@ -15,7 +15,6 @@
 	<!--== ALL CSS FILES ==-->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/materialize.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/mob.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -27,6 +26,13 @@
 	<script src="js/html5shiv.js"></script>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	<style>
+		#map {
+			height: 500px;
+			width: 100%;
+
+		}
+	</style>
 </head>
 
 <body>
@@ -473,7 +479,7 @@
 			<div class="hotel-location">
 				<h2>hotel location
 				</h2>
-				<div class="map">
+				<div class="map" id="map">
 					<iframe
 						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96273.31519870025!2d28.86660334358498!3d41.057163465136554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2s%C4%B0stanbul%2C%20Turkey!5e0!3m2!1sen!2s!4v1585847397391!5m2!1sen!2s"
 						width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
@@ -582,24 +588,10 @@
 						Additional amenities at this hotel include complimentary wireless Internet access, concierge
 						services, and shopping on site.</p>
 					<p><b>Dining</b><br>Enjoy a meal at a restaurant or in a coffee shop/café. Or stay in and take
-							advantage of the hotel's 24-hour room service. A complimentary breakfast is included.</p>
+						advantage of the hotel's 24-hour room service. A complimentary breakfast is included.</p>
 					<p><b>Business, Other Amenities</b><br>Featured amenities include a 24-hour business center, express
 						check-in, and complimentary newspapers in the lobby. A roundtrip airport shuttle is provided for
 						a surcharge at scheduled times.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 				</div>
 			</div>
 			<div class="hotel-amenities">
@@ -611,16 +603,120 @@
 								<h3><img src="images/icons/system.svg" alt=""><span>General</span></h3>
 								<ul class="list-unstyled">
 									<li>Total number of rooms -
-										 -</li>
+										-</li>
 									<li>Number of floors</li>
-									
+
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="amenitie">
+								<h3><img src="images/icons/food.svg" alt=""><span>Food</span></h3>
+								<ul class="list-unstyled">
+									<li>Breakfast available (surcharge)</li>
+									<li>Coffee shop or café</li>
+
+
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="amenitie">
+								<h3><img src="images/icons/makeup.svg" alt=""><span>Beauty & Health
+									</span></h3>
+								<ul class="list-unstyled">
+									<li>Full-service spa</li>
+									<li>Spa treatment room(s)
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="amenitie">
+								<h3><img src="images/icons/Guest-Services.svg" alt=""><span>Guest Services
+									</span></h3>
+								<ul class="list-unstyled">
+									<li>Multilingual staff
+									</li>
+									<li>Luggage storage
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="amenitie">
+								<h3><img src="images/icons/money.svg" alt=""><span>Business</span></h3>
+								<ul class="list-unstyled">
+									<li>Business center
+									</li>
+									<li>Meeting rooms
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="amenitie">
+								<h3><img src="images/icons/cleaning.svg" alt=""><span>Cleaning</span></h3>
+								<ul class="list-unstyled">
+									<li>Dry cleaning/laundry service
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="amenitie">
+								<h3><img src="images/icons/shield.svg" alt=""><span>Security</span></h3>
+								<ul class="list-unstyled">
+									<li>Porter/bellhop
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="amenitie">
+								<h3><img src="images/icons/counter.svg" alt=""><span>Checkin Checkout
+									</span></h3>
+								<ul class="list-unstyled">
+									<li>Express check-out</li>
+									<li>Express check-in
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="amenitie">
+								<h3><img src="images/icons/bathroom.svg" alt=""><span>Bath</span></h3>
+								<ul class="list-unstyled">
+									<li>Roll-in shower
+									</li>
+									<li>Turkish bath/Hammam
+									</li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="amenitie">
+								<h3><img src="images/icons/car-parking.svg" alt=""><span>Parking</span></h3>
+								<ul class="list-unstyled">
+									<li>Free valet parking
+									</li>
+									<li>Number of floors</li>
+
 								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
-			
-			
+
+
 			</div>
 
 
@@ -629,7 +725,9 @@
 
 				</h2>
 				<div class="desc">
-					<p>Enjoy a meal at the restaurant or snacks in the coffee shop/café. The hotel also offers 24-hour room service. A complimentary full breakfast is served on weekdays from 7 AM to 10:30 AM and on weekends from 7 AM to 11 AM.
+					<p>Enjoy a meal at the restaurant or snacks in the coffee shop/café. The hotel also offers 24-hour
+						room service. A complimentary full breakfast is served on weekdays from 7 AM to 10:30 AM and on
+						weekends from 7 AM to 11 AM.
 					</p>
 
 
@@ -687,9 +785,12 @@
 				</h2>
 				<div class="Should-Mention-inner">
 					<ul>
-						<li>This property offers transfers from the airport (surcharges may apply). Guests must contact the property with arrival details before travel, using the contact information on the booking confirmation.
-							</li>
-							<li>Reservations are required for massage services. Reservations can be made by contacting the hotel prior to arrival, using the contact information on the booking confirmation.</li>
+						<li>This property offers transfers from the airport (surcharges may apply). Guests must contact
+							the property with arrival details before travel, using the contact information on the
+							booking confirmation.
+						</li>
+						<li>Reservations are required for massage services. Reservations can be made by contacting the
+							hotel prior to arrival, using the contact information on the booking confirmation.</li>
 					</ul>
 				</div>
 			</div>
@@ -828,12 +929,75 @@
 	<script src="js/jquery-latest.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/wow.min.js"></script>
-	<script src="js/materialize.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
 	<script src="js/custom.js"></script>
 	<script>    $(".fotorama").fotorama({ width: "100%", nav: "thumbs", allowfullscreen: "true", ratio: "350/200", fit: "cover", autoplay: "true" });
 	</script>
+	<script>
+		function initMap() {
+			var uluru = { lat: -25.363, lng: 131.044 };
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 4,
+				center: uluru
+			});
+
+			var contentString = `
+			
+			<a href="https://facebook.com" target="_blank" id="content">
+				<div class="popup-content">
+    <!---->
+    <!---->
+    <div class="img-container">
+        <div class="map-image"
+            style="background: url(&quot;https://i.travelapi.com/hotels/8000000/7550000/7540900/7540834/0a5a6406_z.jpg&quot;) center center / cover;">
+        </div>
+    </div>
+    <div class="details">
+        <div class="name"> Hampton by Hilton Kayasehir <span
+                class="stars">
+                <!---->
+                <!---->★</span></div>
+        <div class="map-review">
+            <div class="review-score">
+                <div class="c-score">
+                    <div class="score-badge"> 0 </div>
+                    <div class="score-content">
+                        <div aria-label="Very Good" class="score-title">Very Good</div>
+                        <div class="score-text">390 Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-price">
+            <div class="price-start"> Price start from </div>
+            <div class="price"> $43.91 </div>
+            <div class="benefits"> complimentary breakfast </div>
+        </div>
+    </div>
+    <!---->
+    <!----> $43.91
+</div>
+				</a>`;
+
+			var infowindow = new google.maps.InfoWindow({
+				content: contentString
+			});
+
+			var marker = new google.maps.Marker({
+				position: uluru,
+				map: map,
+				title: 'Uluru (Ayers Rock)'
+			});
+			marker.addListener('click', function () {
+				infowindow.open(map, marker);
+			});
+		}
+	</script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuXqzzGjKZ6FzmjAlt_rBbwcteOFSvk8c&callback=initMap">
+		</script>
+
 </body>
 
 </html>
