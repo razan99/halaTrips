@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mob.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/editor.css">
+
     <link rel="stylesheet" href="css/materialize.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -121,7 +123,7 @@
                                     </li>
                                     <li><a href="package-add.html" class="menu-active">Add New Package</a>
                                     </li>
-                                   
+                                    
                                 </ul>
                             </div>
                         </li>
@@ -174,100 +176,85 @@
             <div class="sb2-2">
                 <div class="sb2-2-2">
                     <ul>
-                        <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                         </li>
-                        <li class="active-bre"><a href="#"> Package Booking Enquiry</a>
+                        <li class="active-bre"><a href="#"> Add New Package</a>
+                        </li>
+                        <li class="page-back"><a href="index.html"><i class="fa fa-backward" aria-hidden="true"></i> Back</a>
                         </li>
                     </ul>
                 </div>
-                <div class="sb2-2-3">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="box-inn-sp">
-                                <div class="inn-title">
-                                    <h4>Package Booking Enquiry</h4>
-                                    <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
-                                    <a class="dropdown-button drop-down-meta" href="#" data-activates="dr-users"><i class="material-icons">more_vert</i></a>
-                                    <ul id="dr-users" class="dropdown-content">
-                                        <li><a href="#!">Add New</a>
-                                        </li>
-                                        <li><a href="#!">Edit</a>
-                                        </li>
-                                        <li><a href="#!">Update</a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li><a href="#!"><i class="material-icons">delete</i>Delete</a>
-                                        </li>
-                                        <li><a href="#!"><i class="material-icons">subject</i>View All</a>
-                                        </li>
-                                    </ul>
+                <div class="sb2-2-add-blog sb2-2-1">
+                    <div class="box-inn-sp">
+                        <div class="inn-title">
+                            <h4>Add New City</h4>
+                        </div>
+                        <div class="bor">
+                            <form>
+                                <div class="box-inn-sp">
+                        
+                                    <div class="tab-inn tab-posi">
+                                        <ul class="tabs">
+                                            <li class="tab col s3"><a class="active" href="#lang_ar">AR</a>
+                                            </li>
+                                            <li class="tab col s3"><a href="#lang_en">EN</a>
+                                            </li>
+                                           
+                                        </ul>
+                                        <div id="lang_ar" class="col s12 tab-pad">
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="ar_name" type="text" class="validate">
+                                                    <label for="ar_name">City Name</label>
+                                                </div>
+            
+                                                <div class="input-field col s12">
+                                                    <textarea id="ar_description" class="materialize-textarea"></textarea>
+                                                    <label for="ar_description">City description</label>
 
-                                    <!-- Dropdown Structure -->
-
-                                </div>
-                                <div class="tab-inn">
-                                    <div class="table-responsive table-desi">
-                                        <table class="table table-hover">
-                                            <thead>
-                                                <tr>
-                                                    <th>User Name</th>
-                                                    <th>Package Name</th>
-                                                    <th>Phone</th>
-                                                    <th>Email</th>
-                                                    <th>Total Price</th>
-                                                    <th>Package Url</th>
-                                                    <th>View Details</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><span class="list-img">Ahmed mohamed</span>
-                                                    </td>
-                                                    <td><a href="#"><span class="list-enq-name">Istanboul show</span></a>
-                                                    </td>
-                                                    <td>+91 32111 65412</td>
-                                                    <td>enquiry@mail.com</td>
-                                                    <td>$260</td>
-                                                    <td><a href="custom-package-view.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                                    </td>
-                                                    <td>
-                                                    <a href="custom-package-view.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="list-img">Ahmed mohamed</span>
-                                                    </td>
-                                                    <td><a href="#"><span class="list-enq-name">Istanboul show</span></a>
-                                                    </td>
-                                                    <td>+91 32111 65412</td>
-                                                    <td>enquiry@mail.com</td>
-                                                    <td>$260</td>
-                                                    <td><a href="custom-package-view.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                                    </td>
-                                                    <td>
-                                                    <a href="custom-package-view.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><span class="list-img">Ahmed mohamed</span>
-                                                    </td>
-                                                    <td><a href="#"><span class="list-enq-name">Istanboul show</span></a>
-                                                    </td>
-                                                    <td>+91 32111 65412</td>
-                                                    <td>enquiry@mail.com</td>
-                                                    <td>$260</td>
-                                                    <td><a href="custom-package-view.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                                    </td>
-                                                    <td>
-                                                    <a href="custom-package-view.html"><i class="fa fa-eye" aria-hidden="true"></i></a>
-                                                    </td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                        </table>
+                                                </div>
+                                              
+                                            </div>
+                                        </div>
+                                        <div id="lang_en" class="col s12 tab-pad">
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="en_name" type="text" class="validate">
+                                                    <label for="en_name">City Name</label>
+                                                </div>
+            
+                                                <div class="input-field col s12">
+                                                    <textarea id="en_description" class="materialize-textarea"></textarea>
+                                                    <label for="en_description">City description</label>
+                                                </div>
+                                              
+                                            </div>
+                                        </div>
+                                      
                                     </div>
                                 </div>
-                            </div>
+                      
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <div class="file-field">
+                                            <div class="btn">
+                                                <span>Upload</span>
+                                                <input type="file" name="interface_pic">
+                                            </div>
+                                            <div class="file-path-wrapper">
+                                                <input class="file-path validate" type="text" placeholder="Interface pic">
+                                            </div>
+                                        </div>
+                                    </div>
+                          
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input type="submit" class="waves-effect waves-light btn-large" value="Submit">
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -275,12 +262,15 @@
         </div>
     </div>
 
+    <!--== BOTTOM FLOAT ICON ==-->
 
 
     <!--======== SCRIPT FILES =========-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/editor.js"></script>
+
     <script src="js/custom.js"></script>
 </body>
 
