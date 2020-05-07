@@ -1215,7 +1215,7 @@ align-items: flex-start;
     bottom: 0px;
     top: 0px;
     background: #e23464;
-    background: linear-gradient(to bottom,#f2f9ff,#e1e4e8);
+    background: #f3f8fe;
 }
 .pla1 {
     padding-right: 0px !important;
@@ -1510,13 +1510,13 @@ align-items: flex-start;
 /* 12.FOOTER 1 
 /*-------------------------------------------------------*/
 .footer {
-    background: #114079;
+    background: #f3f8fe;
     position: relative;
     overflow: hidden;
     padding-bottom: 85px;
 }
 .footer h4 {
-    color:#b7e6ff;
+    color:#212529;
     text-transform: uppercase;
     padding-bottom: 15px;
 }
@@ -1566,7 +1566,7 @@ footer ul li a {
     font-size: 18px;
 }
 .foot-sec2 p {
-    color: #ffffff;
+    color: #212529;
 }
 .two-columns {
     padding: 0px;
@@ -1582,7 +1582,7 @@ footer ul li a {
     clear: both;
 }
 .two-columns li a {
-    color: #ffffff;
+    color: #212529;
 }
 /*-------------------------------------------------------*/
 /* 13.5 SOCIAL MEDIA 
@@ -1695,6 +1695,7 @@ footer ul li a {
 }
 .disco .overlay{
     padding: 20px 15px 22px 15px;
+    height: 250px;
 
     background: rgba(0, 0, 0, 0.377);
 }
@@ -1741,14 +1742,13 @@ footer ul li a {
 /* 12.2 MOST POPULAR VACATIONS 
 /*-------------------------------------------------------*/
 .footer1 {
-    background: #114079;
+    background: #f3f8fe;
     padding: 100px 0px 50px 0px;
-    border-top: 1px solid;
 }
 .footer_places {
 }
 .footer_places h4 {
-    color: #ffffff;
+    color: #212529;
     margin-top: 0px;
     padding-bottom: 15px;
     text-transform: uppercase;
@@ -3410,7 +3410,7 @@ fieldset, label {
 .hot-page2-alp::before {
     content: '';
     position: fixed;
-    background: #f5f7fa;   /* top: 0px;
+    background: #f3f8fe;   /* top: 0px;
     */
    /* bottom: 0px;
     */
@@ -6661,7 +6661,7 @@ html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:activ
 .ed-mi-close{
     position: absolute;
     z-index: 99;
-    margin:-50px 8px 8px -30px;
+    margin:-50px 8px 8px 0;
 }
 .ed-mi-close i{
     width: 32px;
@@ -8724,7 +8724,6 @@ a.btn-reservation-add {
 .hotel-in-list {
     display: flex;
     margin-bottom: 30px;
-    border: 1px solid #dedede;
     background: #fff;
     position: relative;
     overflow: hidden;
@@ -8733,6 +8732,7 @@ a.btn-reservation-add {
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    box-shadow: 0px 0px 11px -3px rgba(0, 0, 0, 0.23);
 }
 
 
@@ -8994,4 +8994,30 @@ a.btn-reservation-add {
     font-size: 20px !important;
     background: #e67e22;
     border-color: #e67e22;
+}
+.try-custom-package {
+    padding: 50px 0;
+    background-image: linear-gradient(258deg, #ec9344, #e67e22);
+    text-align: center;
+}
+
+.try-custom-package p {
+    color: #fff;
+    font-size: 30px;
+    line-height: 2;
+}
+
+.try-custom-package a {
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 28px;
+    -webkit-box-shadow: 0 6px 20px 0 rgba(18, 45, 46, 0.1);
+    box-shadow: 0 6px 20px 0 rgba(18, 45, 46, 0.1);
+    background-color: #ffffff;
+    padding: 10px 25px;
+    transition: all 1s;
+    margin-top: 21px;
+    display: inline-block;
 }
