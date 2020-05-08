@@ -9038,9 +9038,12 @@ a.btn-reservation-add {
 }
 .hotels-filters {
     position: fixed;
-    bottom: 0;
+    top: 0;
     z-index: 1000000;
     width: 100%;
     left: 0;
     overflow-y: scroll;
+}
+body{
+    overflow:hidden !important
 }
