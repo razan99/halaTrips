@@ -7639,10 +7639,12 @@ html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:activ
 }
 .offer-l ul {
     margin-bottom: 0px;
+    padding: 0;
 }
 .offer-l ul li {
     display: inline-block;
     margin: 0px 10px;
+    margin-bottom: 20px;
 }
 .offer-l ul li span {
     display: block;
@@ -9021,4 +9023,24 @@ a.btn-reservation-add {
     transition: all 1s;
     margin-top: 21px;
     display: inline-block;
+}
+.testimonial img{
+    max-width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (max-width:550px){
+    .testimonial img ,
+    .place img{
+        margin-bottom: 30px;
+    }
+}
+.hotels-filters {
+    position: fixed;
+    bottom: 0;
+    z-index: 1000000;
+    width: 100%;
+    left: 0;
+    overflow-y: scroll;
 }
