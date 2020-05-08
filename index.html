@@ -1170,7 +1170,17 @@
                 loop: true,
                 autoplay: true,
                 autoplayTimeout: 3000,
-                margin: 10
+                margin: 10  ,
+                responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:false
+        }
+    }
             });
         });
     </script>
