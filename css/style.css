@@ -9043,6 +9043,7 @@ a.btn-reservation-add {
     width: 100%;
     left: 0;
     overflow-y: scroll;
+    height: 100%;
 }
 body{
     overflow:hidden !important
