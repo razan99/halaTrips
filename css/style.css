@@ -9086,3 +9086,33 @@ a.btn-reservation-add {
     }
 }
 
+@media(max-width:550px){
+    .hotel-in-list{
+        flex-wrap: wrap;
+    }
+    .hot-page2-hli-1 ,
+    .hot-page2-hli-1 .hotel-img{
+        width: 100%;
+    }
+    .hotel-in-list .hotel-details{
+        flex-wrap: wrap;
+    }
+    .hot-page2-alp-ri-p2 {
+        padding: 20px 15px 20px 15px;
+    }
+    .hotel-in-list .hotel-details .hotel-location{
+        padding-top: 0;
+    }
+    .hot-page2-alp-ri-p3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hot-list-p3-1{
+        padding-top: 0 !important;
+    }
+    .map-review{
+        margin-bottom: 0;
+    }
+}
