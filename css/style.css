@@ -9039,6 +9039,7 @@ a.btn-reservation-add {
 }
 @media (max-width:550px){
     button.filters-open {
+        top: calc(100vh - 16px);
         position: fixed;
         bottom: 0;
         z-index: 100;
