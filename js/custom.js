@@ -74,40 +74,40 @@ $(document).ready(function() {
 	//MATERIALIZE SLIDER
 
     //AUTO COMPLETE CITY SELECT
-    $('#select-city,#select-city-1,#select-city-2,#select-city-3,#select-city-4,#select-city-5.autocomplete').autocomplete({
-        data: {
-            "New York": null,
-            "California": null,
-            "Illinois": null,
-            "Texas": null,
-            "Pennsylvania": null,
-            "San Diego": null,
-            "Los Angeles": null,
-            "Dallas": null,
-            "Austin": null,
-            "Columbus": null,
-            "Charlotte": null,
-            "El Paso": null,
-            "Portland": null,
-            "Las Vegas": null,
-            "Oklahoma City": null,
-            "Milwaukee": null,
-            "Tucson": null,
-            "Sacramento": null,
-            "Long Beach": null,
-            "Oakland": null,
-            "Arlington": null,
-            "Tampa": null,
-            "Corpus Christi": null,
-            "Greensboro": null,
-            "Jersey City": null
-        },
-        limit: 8, // The max amount of results that can be shown at once. Default: Infinity.
-        onAutocomplete: function(val) {
-            // Callback function when value is autcompleted.
-        },
-        minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
-    });
+    // $('#select-city,#select-city-1,#select-city-2,#select-city-3,#select-city-4,#select-city-5.autocomplete').autocomplete({
+    //     data: {
+    //         "New York": null,
+    //         "California": null,
+    //         "Illinois": null,
+    //         "Texas": null,
+    //         "Pennsylvania": null,
+    //         "San Diego": null,
+    //         "Los Angeles": null,
+    //         "Dallas": null,
+    //         "Austin": null,
+    //         "Columbus": null,
+    //         "Charlotte": null,
+    //         "El Paso": null,
+    //         "Portland": null,
+    //         "Las Vegas": null,
+    //         "Oklahoma City": null,
+    //         "Milwaukee": null,
+    //         "Tucson": null,
+    //         "Sacramento": null,
+    //         "Long Beach": null,
+    //         "Oakland": null,
+    //         "Arlington": null,
+    //         "Tampa": null,
+    //         "Corpus Christi": null,
+    //         "Greensboro": null,
+    //         "Jersey City": null
+    //     },
+    //     limit: 8, // The max amount of results that can be shown at once. Default: Infinity.
+    //     onAutocomplete: function(val) {
+    //         // Callback function when value is autcompleted.
+    //     },
+    //     minLength: 1, // The minimum length of the input for the autocomplete to start. Default: 1.
+    // });
 
 //     $('#select-search,#select-search-1,#select-search-2.autocomplete').autocomplete({
 //         data: {
@@ -316,12 +316,14 @@ function itemClickCounter() {
 itemClickCounter();
 
 $(document).ready(function(){
-    // $(".owl-carousel").owlCarousel({
-    //     items: 2 ,
-    //     rtl : true,
-    //      loop:true ,
-    //      autoplay:true,
-    //      autoplayTimeout : 3000 ,
-    //     margin:10
-    // });
+
+    $('.filters-open').on('click' , function() {
+        $('.hotels-filters').fadeIn();
+    })
+    $('.filters-close').on('click' , function() {
+        $('.hotels-filters').fadeOut();
+    })
+
+    
   });
+  

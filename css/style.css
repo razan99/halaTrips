@@ -4115,6 +4115,7 @@ fieldset, label {
     left: 0px;
     top: 35%;
     z-index: 999;
+    display: none !important;
 }
 .icon-float ul {
     padding: 0px;
@@ -9029,22 +9030,58 @@ a.btn-reservation-add {
     margin-right: auto;
     margin-left: auto;
 }
+.filters-open{
+    display: none;
+}
+.filters-close{
+    display: none;
 
+}
 @media (max-width:550px){
+    button.filters-open {
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+        width: 100%;
+        left: 0;
+        padding: 5px;
+        font-size: 20px;
+        background: #fff;
+        border: none;
+        border-top: 2px solid #eee;
+        color: #e67e22;
+    }
+    button.filters-close {
+        width: 100%;
+        background: #e67e22;
+        position: fixed;
+        bottom: 0;
+        border: none;
+        padding: 10px;
+        font-size: 20px;
+        color: #fff;
+        z-index: 10;
+    }
+    .filters-open{
+        display: block;
+    }
+    .filters-close{
+        display: block;
+    
+    }
     .testimonial img ,
     .place img{
         margin-bottom: 30px;
     }
+    .hotels-filters {
+        position: fixed;
+        top: 0;
+        z-index: 1000000;
+        width: 100%;
+        left: 0;
+        overflow-y: scroll;
+        height: 100%;
+        display: none;
+    }
 }
-.hotels-filters {
-    position: fixed;
-    top: 0;
-    z-index: 1000000;
-    width: 100%;
-    left: 0;
-    overflow-y: scroll;
-    height: 100%;
-}
-body{
-    overflow:hidden !important
-}
+
