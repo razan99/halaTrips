@@ -8,7 +8,7 @@ body {
     font-size: 14px;
     color: #727070;
     font-family: 'Quicksand', sans-serif;
-
+    overflow-x: hidden !important;
 }
 a {
     text-decoration: none;
@@ -6689,7 +6689,7 @@ html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:activ
 .ed-mm-inn ul li a{
     display: block;
     border-bottom: 1px solid #ececec;
-    padding: 6px 0px 6px 25px;
+    padding: 15px 0px 10px 25px;
     font-size: 14px;
     color: #42494e;
 }
@@ -8144,7 +8144,7 @@ align-items: center;
     margin-top: 0;
     border: 1px solid #eee;
     border-radius: 10px;
-    padding: 10px 15px;
+    padding: 5px !important ;
     float: none;
     display: flex;
     flex-direction: column;
@@ -8153,7 +8153,10 @@ align-items: center;
   /* List Persons Count */
   .list-persons-count {
     list-style: none;
-    padding-bottom: 5px; }
+    padding-bottom: 5px; 
+
+    position: relative !important;
+}
     .list-persons-count > li {
       display: flex !important;
       align-items: center;
@@ -8175,6 +8178,7 @@ align-items: center;
   .counter-add-item {
     display: flex;
     align-items: center;
+    width: 150px !important;
   }
     .counter-add-item > * {
       display: flex;
@@ -9039,9 +9043,8 @@ a.btn-reservation-add {
 }
 @media (max-width:550px){
     button.filters-open {
-        top: calc(100vh - 16px);
+        bottom:0;
         position: fixed;
-        top: calc(100vh - 16px);
         z-index: 100;
         width: 100%;
         left: 0;
@@ -9115,4 +9118,89 @@ a.btn-reservation-add {
     .map-review{
         margin-bottom: 0;
     }
+    .top-filter{
+        justify-content: center;
+    }
+    .rooms-list .room{
+        flex-wrap: wrap;
+    }
+    .conditions{
+        margin: 0;
+    }
+    .room-price {
+        padding: 0 0px;
+    }
+    .desc .room-name{
+        font-size: 15px;
+        display: block;
+        margin-bottom: 20px;
+    }
 }
+
+.contact-form{
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+form#contact-form-ar{
+    box-shadow: 0px 2px 15px #00000026;
+    padding: 20px 15px;
+    background: #fff;
+    border-radius: 10px !important;
+}
+.contact-form .contact-form-inner label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.contact-form input, .contact-form textarea {
+    border: solid 2px #78909c;
+}
+.contact-form .contact-form-inner .button button {
+    margin: 25px auto 0;
+    font-weight: 700;
+    display: block;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 13px 90px;
+    font-size: 16px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: 50px;
+    cursor: pointer;
+    background: transparent linear-gradient(259deg, #a7540a 0%, #e67e22 100%) 0% 0% no-repeat padding-box;
+    -webkit-box-shadow: 0px 2px 15px #00000026;
+    box-shadow: 0px 2px 15px #00000026;
+}
+.contact-form .contact-form-inner .button button img {
+    width: 20px;
+}
+.contact-form .contact-form-inner .button button span {
+    margin: 0 15px;
+}
+.notes-section h4 {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+}
+.notes-section .card-header{
+    background-color: rgb(241, 151, 51);
+}
+.notes-section .col-md-4{
+    padding: 0 10px;
+}
+.notes-section .card-body{
+    padding: 1.25rem 1rem;
+}
+.notes-section ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+}
+.notes-section ul li:before {content: '';display: inline-block;min-width: 8px;height: 8px;background: #f19733;margin-right: 8px;border-radius: 50%;margin-left: -8px;margin-top: 6px;}
