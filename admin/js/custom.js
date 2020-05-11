@@ -54,5 +54,7 @@ $(document).ready(function() {
 
 
 $(document).ready( function() {
-$("#txtEditor").Editor();                    
+$("#txtEditor-ar").Editor();          
+$("#txtEditor-en").Editor();                    
+
 });

@@ -80,8 +80,9 @@
                     <li><a href="package-all.html" class="waves-effect"><i class="fa fa-umbrella"
                                 aria-hidden="true"></i> Tour Packages</a>
                     </li>
-                   
-                    <li><a href="user-add.html" class="waves-effect"><i class="fa fa-user-plus" aria-hidden="true"></i> Add New User</a>
+
+                    <li><a href="user-add.html" class="waves-effect"><i class="fa fa-user-plus" aria-hidden="true"></i>
+                            Add New User</a>
                     </li>
                     <li><a href="#" class="waves-effect"><i class="fa fa-undo" aria-hidden="true"></i> Backup Data</a>
                     </li>
@@ -97,7 +98,7 @@
     <!--== BODY CONTNAINER ==-->
     <div class="container-fluid sb2">
         <div class="row">
-            <div class="sb2-1">
+            <div class="sb2-1 ss">
                 <!--== USER INFO ==-->
                 <div class="sb2-12">
                     <ul>
@@ -125,33 +126,21 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="javascript:void(0)" class="collapsible-header active"><i class="fa fa-umbrella"
+                        <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-umbrella"
                                     aria-hidden="true"></i> Tour Packages</a>
                             <div class="collapsible-body left-sub-menu">
                                 <ul>
+                                    <li><a href="package-add.html">Add New Package</a>
+                                    </li>
                                     <li><a href="package-all.html">All Packages</a>
                                     </li>
-                                    <li><a href="package-add.html" class="menu-active">Add New Package</a>
+                                    <li><a href="cities.html">Cities</a>
                                     </li>
-
+                                 
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-h-square"
-                                    aria-hidden="true"></i> Hotels</a>
-                            <div class="collapsible-body left-sub-menu">
-                                <ul>
-                                    <li><a href="hotel-all.html">All Hotels</a>
-                                    </li>
-                                    <li><a href="hotel-add.html">Add New Hotel</a>
-                                    </li>
-                                    <li><a href="hotel-room-type-all.html">Room Type</a>
-                                    </li>
-                                    <li><a href="hotel-room-type-add.html">Add Room Type</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-picture-o"
                                     aria-hidden="true"></i> Sight Seeings</a>
                             <div class="collapsible-body left-sub-menu">
@@ -163,25 +152,26 @@
                                 </ul>
                             </div>
                         </li>
-                            
-                            
-                            <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-ticket" aria-hidden="true"></i> Booking & Enquiry</a>
-                                <div class="collapsible-body left-sub-menu">
-                                    <ul>
-                                        <li><a href="hotel-booking-all.html">Hotel</a>
-                                        </li>
-                                        <li><a href="package-booking-all.html">Package</a>
-                                        </li>
-<li><a href="custom-package-booking.html">Custom Package</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            
-                            <li><a href="social-media.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Social Media</a>
-                            </li>
-                            <li><a href="login.html" target="_blank"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
-                            </li>
+
+
+                        <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-ticket"
+                                    aria-hidden="true"></i> Booking & Enquiry</a>
+                            <div class="collapsible-body left-sub-menu">
+                                <ul>
+                                    <li><a href="hotel-booking-all.html">Hotel</a>
+                                    </li>
+                                    <li><a href="package-booking-all.html">Package</a>
+                                    </li>
+                                    <li><a href="custom-package-booking.html">Custom Package</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                
+                        <li><a href="login.html" target="_blank"><i class="fa fa-sign-in" aria-hidden="true"></i>
+                                 Logout</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -205,12 +195,207 @@
                         </div>
                         <div class="bor">
                             <form>
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <input id="list-title" type="text" class="validate">
-                                        <label for="list-title">Package Name</label>
+
+                                <div class="box-inn-sp">
+
+                                    <div class="tab-inn tab-posi">
+                                        <ul class="tabs">
+                                            <li class="tab col s3"><a class="active" href="#lang_ar">AR</a>
+                                            </li>
+                                            <li class="tab col s3"><a href="#lang_en">EN</a>
+                                            </li>
+
+                                        </ul>
+                                        <div id="lang_ar" class="col s12 tab-pad">
+
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="list-title" type="text" class="validate">
+                                                    <label for="list-title">Package Name</label>
+                                                </div>
+                                                <div class="col s12">
+                                                    <h3>Description</h3>
+
+                                                    <div id="txtEditor-ar"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <select multiple>
+                                                        <option value="" disabled selected>Choose package type</option>
+                                                        <option value="1">Advertising</option>
+                                                        <option value="2">Top offers this mount</option>
+                                                        <option value="3">None</option>
+                                                    </select>
+                                                    <label>Choose package type</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <select multiple>
+                                                        <option value="" disabled selected>Choose Country</option>
+                                                        <option value="1">Istanbul</option>
+                                                        <option value="2">Karedeniz</option>
+                                                        <option value="3">Fethiye</option>
+                                                        <option value="3">Antalya</option>
+                                                        <option value="3">Marmaris & Bodrum</option>
+                                                        <option value="3">others</option>
+                                                    </select>
+                                                    <label>Select Sub Category</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input id="Package-auth" type="number" class="validate">
+                                                    <label for="Package-auth">Free Ticket</label>
+                                                </div>
+                                            </div>
+                                            <div class="row days-add">
+
+                                                <div class="input-field col s8">
+                                                    <input id="list-title" type="text" class="validate" name="day"
+                                                        id="1">
+                                                    <label for="list-title">The path days of tour</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <a class="btn-floating btn-large waves-effect waves-light red"><i
+                                                            class="material-icons">add</i></a>
+
+                                                </div>
+                                            </div>
+                                            <div class="row notes_trip" style="margin-bottom: 70px;">
+                                                <div class="col s4">
+
+                                                    <div class="box-inn-sp box-second-inn">
+                                                        <div class="inn-title">
+                                                            <h4>trip notes</h4>
+                                                        </div>
+                                                        <div class="tab-inn">
+                                                            <div class="chips" id="trip_notes"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col s4">
+                                                    <div class="box-inn-sp box-second-inn">
+                                                        <div class="inn-title">
+                                                            <h4>trip disclude</h4>
+                                                        </div>
+                                                        <div class="tab-inn">
+                                                            <div class="chips" id="trip_disclude"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col s4">
+                                                    <div class="box-inn-sp box-second-inn">
+                                                        <div class="inn-title">
+                                                            <h4>trip include</h4>
+                                                        </div>
+                                                        <div class="tab-inn">
+                                                            <div class="chips" id="trip_include"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="lang_en" class="col s12 tab-pad">
+
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="list-title" type="text" class="validate">
+                                                    <label for="list-title">Package Name</label>
+                                                </div>
+                                                <div class="col s12">
+                                                    <h3>Description</h3>
+
+                                                    <div id="txtEditor-en"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s4">
+                                                    <select multiple>
+                                                        <option value="" disabled selected>Choose package type</option>
+                                                        <option value="1">Advertising</option>
+                                                        <option value="2">Top offers this mount</option>
+                                                        <option value="3">None</option>
+                                                    </select>
+                                                    <label>Choose package type</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <select multiple>
+                                                        <option value="" disabled selected>Choose Country</option>
+                                                        <option value="1">Istanbul</option>
+                                                        <option value="2">Karedeniz</option>
+                                                        <option value="3">Fethiye</option>
+                                                        <option value="3">Antalya</option>
+                                                        <option value="3">Marmaris & Bodrum</option>
+                                                        <option value="3">others</option>
+                                                    </select>
+                                                    <label>Select Sub Category</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <input id="Package-auth" type="number" class="validate">
+                                                    <label for="Package-auth">Free Ticket</label>
+                                                </div>
+                                            </div>
+                                            <div class="row days-add">
+
+                                                <div class="input-field col s8">
+                                                    <input id="list-title" type="text" class="validate" name="day"
+                                                        id="1">
+                                                    <label for="list-title">The path days of tour</label>
+                                                </div>
+                                                <div class="input-field col s4">
+                                                    <a class="btn-floating btn-large waves-effect waves-light red"><i
+                                                            class="material-icons">add</i></a>
+
+                                                </div>
+                                            </div>
+                                            <div class="row notes_trip" style="margin-bottom: 70px;">
+                                                <div class="col s4">
+
+                                                    <div class="box-inn-sp box-second-inn">
+                                                        <div class="inn-title">
+                                                            <h4>trip notes</h4>
+                                                        </div>
+                                                        <div class="tab-inn">
+                                                            <div class="chips" id="trip_notes"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col s4">
+                                                    <div class="box-inn-sp box-second-inn">
+                                                        <div class="inn-title">
+                                                            <h4>trip disclude</h4>
+                                                        </div>
+                                                        <div class="tab-inn">
+                                                            <div class="chips" id="trip_disclude"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col s4">
+                                                    <div class="box-inn-sp box-second-inn">
+                                                        <div class="inn-title">
+                                                            <h4>trip include</h4>
+                                                        </div>
+                                                        <div class="tab-inn">
+                                                            <div class="chips" id="trip_include"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div class="input-field col s12">
+                                </div>
+
+
+
+
+
+
+
+                                <div class="row">
+                                    <div class="input-field col s12" style="margin-bottom: 40px;">
                                         <div class="file-field">
                                             <div class="btn">
                                                 <span>File</span>
@@ -222,9 +407,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="file-field">
+                                    <div class="file-field col s12">
                                         <div class="btn">
                                             <span>image</span>
                                             <input type="file">
@@ -233,44 +416,6 @@
                                             <input class="file-path validate" type="text"
                                                 placeholder="Upload Blog Banner">
                                         </div>
-                                    </div>
-                                </div>
-
-
-
-
-
-                                <div class="row">
-                                    <h3>Description</h3>
-
-                                    <div id="txtEditor"></div>
-
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s4">
-                                        <select multiple>
-                                            <option value="" disabled selected>Choose package type</option>
-                                            <option value="1">Advertising</option>
-                                            <option value="2">Top offers this mount</option>
-                                            <option value="3">None</option>
-                                        </select>
-                                        <label>Choose package type</label>
-                                    </div>
-                                    <div class="input-field col s4">
-                                        <select multiple>
-                                            <option value="" disabled selected>Choose Country</option>
-                                            <option value="1">Istanbul</option>
-                                            <option value="2">Karedeniz</option>
-                                            <option value="3">Fethiye</option>
-                                            <option value="3">Antalya</option>
-                                            <option value="3">Marmaris & Bodrum</option>
-                                            <option value="3">others</option>
-                                        </select>
-                                        <label>Select Sub Category</label>
-                                    </div>
-                                    <div class="input-field col s4">
-                                        <input id="Package-auth" type="number" class="validate">
-                                        <label for="Package-auth">Free Ticket</label>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -293,55 +438,10 @@
                                         <label for="Package-auth"> Departure Date</label>
                                     </div>
                                 </div>
-                                <div class="row days-add">
-
-                                    <div class="input-field col s8">
-                                        <input id="list-title" type="text" class="validate" name="day" id="1">
-                                        <label for="list-title">The path days of tour</label>
-                                    </div>
-                                    <div class="input-field col s4">
-                                        <a class="btn-floating btn-large waves-effect waves-light red"><i
-                                                class="material-icons">add</i></a>
-
-                                    </div>
-                                </div>
 
 
-                                <div class="row notes_trip">
-                                    <div class="col s4">
-                                        
-                            <div class="box-inn-sp box-second-inn">
-                                <div class="inn-title">
-                                    <h4>trip notes</h4>
-                                </div>
-                                <div class="tab-inn">
-                                    <div class="chips" id="trip_notes"></div>
-                                </div>
-                            </div>
-                          
-                                    </div>
-                                    <div class="col s4">
-                                        <div class="box-inn-sp box-second-inn">
-                                            <div class="inn-title">
-                                                <h4>trip disclude</h4>
-                                            </div>
-                                            <div class="tab-inn">
-                                                <div class="chips" id="trip_disclude"></div>
-                                            </div>
-                                        </div>
-                              
-                                    </div>
-                                    <div class="col s4">
-                                        <div class="box-inn-sp box-second-inn">
-                                            <div class="inn-title">
-                                                <h4>trip include</h4>
-                                            </div>
-                                            <div class="tab-inn">
-                                                <div class="chips" id="trip_include"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+
+
                                 <div class="row">
                                     <div class="input-field col s12">
                                         <div class="file-field">
@@ -358,8 +458,8 @@
                                 </div>
 
                                 <div class="row">
-                                    <div class="input-field col s12">
-                                        <input type="submit" class="waves-effect waves-light btn-large" value="Submit">
+                                    <div class="input-field col s12" style="margin-top: 100px;text-align: center;">
+                                        <input type="submit" class="waves-effect waves-dark btn-large" value="Submit">
                                     </div>
                                 </div>
                             </form>
@@ -369,25 +469,6 @@
             </div>
         </div>
     </div>
-
-    <!--== BOTTOM FLOAT ICON ==-->
-    <section>
-        <div class="fixed-action-btn vertical">
-            <a class="btn-floating btn-large red pulse">
-                <i class="large material-icons">mode_edit</i>
-            </a>
-            <ul>
-                <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a>
-                </li>
-                <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a>
-                </li>
-                <li><a class="btn-floating green"><i class="material-icons">publish</i></a>
-                </li>
-                <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a>
-                </li>
-            </ul>
-        </div>
-    </section>
 
     <!--======== SCRIPT FILES =========-->
     <script src="js/jquery.min.js"></script>

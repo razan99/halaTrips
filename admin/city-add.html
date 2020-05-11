@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mob.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/editor.css">
+
     <link rel="stylesheet" href="css/materialize.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -167,113 +169,85 @@
             <div class="sb2-2">
                 <div class="sb2-2-2">
                     <ul>
-                        <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Custom package</a>
+                        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
                         </li>
-                        <li class="active-bre"><a href="#"> Custom package name</a>
+                        <li class="active-bre"><a href="#"> Add New Package</a>
+                        </li>
+                        <li class="page-back"><a href="index.html"><i class="fa fa-backward" aria-hidden="true"></i> Back</a>
                         </li>
                     </ul>
                 </div>
-                <div class="sb2-2-3">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="box-inn-sp">
-                                <div class="inn-title">
-                                    <h4>Custom package name</h4>
-                                    <p>Airtport Hotels The Right Way To Start A Short Break Holiday</p>
-                                    <a class="dropdown-button drop-down-meta" href="#" data-activates="dr-users"><i class="material-icons">more_vert</i></a>
-                                    <ul id="dr-users" class="dropdown-content">
-                                        <li><a href="#!">Add New</a>
-                                        </li>
-                                        <li><a href="#!">Edit</a>
-                                        </li>
-                                        <li><a href="#!">Update</a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li><a href="#!"><i class="material-icons">delete</i>Delete</a>
-                                        </li>
-                                        <li><a href="#!"><i class="material-icons">subject</i>View All</a>
-                                        </li>
-                                    </ul>
+                <div class="sb2-2-add-blog sb2-2-1">
+                    <div class="box-inn-sp">
+                        <div class="inn-title">
+                            <h4>Add New City</h4>
+                        </div>
+                        <div class="bor">
+                            <form>
+                                <div class="box-inn-sp">
+                        
+                                    <div class="tab-inn tab-posi">
+                                        <ul class="tabs">
+                                            <li class="tab col s3"><a class="active" href="#lang_ar">AR</a>
+                                            </li>
+                                            <li class="tab col s3"><a href="#lang_en">EN</a>
+                                            </li>
+                                           
+                                        </ul>
+                                        <div id="lang_ar" class="col s12 tab-pad">
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="ar_name" type="text" class="validate">
+                                                    <label for="ar_name">City Name</label>
+                                                </div>
+            
+                                                <div class="input-field col s12">
+                                                    <textarea id="ar_description" class="materialize-textarea"></textarea>
+                                                    <label for="ar_description">City description</label>
 
-                                    <!-- Dropdown Structure -->
-
-                                </div>
-                                <div class="tab-inn">
-
-                                    <div class="table-responsive table-desi">
-                                        <table class="table table-hover">
-                                        
-                                            <tbody>
-                                                <tr>
-                                                    <th  style="width:130px"><span class="list-enq-name">Name: </span>
-                                                    </th>
-                                                    <td>احمد غسان
-                                                    </td>
-                                                    
-                                                </tr>
-                                       
-                                                <tr>
-                                                    <th  style="width:130px"><span class="list-enq-name">email:</span>
-                                                    </th>
-                                                    <td>ahmed.ghassan84@gmail.com
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                    <th  style="width:130px"><span class="list-enq-name">phone: </span>
-                                                    </th>
-                                                    <td>5395076779
-                                                    </td>
-                                                    
-                                                </tr>
-                                                <tr>
-                                                    <th  style="width:130px"><span class="list-enq-name">city name: </span>
-                                                    </th>
-                                                    <td> البحر الاسود
-                                                    </td>
-                                                    
-                                                </tr>        <tr>
-                                                    <th  style="width:130px"><span class="list-enq-name">travel facilities: </span>
-                                                    </th>
-                                                    <td>yes
-                                                    </td>
-                                                    
-                                                </tr>        <tr>
-                                                    <th  style="width:130px"><span class="list-enq-name">description:</span>
-                                                    </th>
-                                                    <td>اولا : عدد الاطفال واحد , ثانيا : ارغب بتزويدي بإسم الفندق , ثالثا : ارغب ان تكون الرحلة الى طرابزون
-                                                    </td>
-                                                    
-                                                </tr>        <tr>
-                                                    <th  style="width:130px"><span class="list-enq-name">from to: </span>
-                                                    </th>
-                                                    <td>from 2019-08-11 to 2019-08-15
-                                                    </td>
-                                                    
-                                                </tr>        <tr>
-                                                    <th  style="width:130px"><span class="list-enq-name">adult num: </span>
-                                                    </th>
-                                                    <td>10
-                                                    </td>
-                                                    
-                                                </tr>        <tr>
-                                                    <th  style="width:130px"><span class="list-enq-name">childern num: </span>
-                                                    </th>
-                                                    <td>3
-                                                    </td>
-                                                    
-                                                </tr>        <tr>
-                                                    <th  style="width:130px"><span class="list-enq-name">hotel stars: </span>
-                                                    </th>
-                                                    <td>10
-                                                    </td>
-                                                    
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                </div>
+                                              
+                                            </div>
+                                        </div>
+                                        <div id="lang_en" class="col s12 tab-pad">
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="en_name" type="text" class="validate">
+                                                    <label for="en_name">City Name</label>
+                                                </div>
+            
+                                                <div class="input-field col s12">
+                                                    <textarea id="en_description" class="materialize-textarea"></textarea>
+                                                    <label for="en_description">City description</label>
+                                                </div>
+                                              
+                                            </div>
+                                        </div>
+                                      
                                     </div>
                                 </div>
-                            </div>
+                      
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <div class="file-field">
+                                            <div class="btn">
+                                                <span>Upload</span>
+                                                <input type="file" name="interface_pic">
+                                            </div>
+                                            <div class="file-path-wrapper">
+                                                <input class="file-path validate" type="text" placeholder="Interface pic">
+                                            </div>
+                                        </div>
+                                    </div>
+                          
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input type="submit" class="waves-effect waves-light btn-large" value="Submit">
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -281,11 +255,15 @@
         </div>
     </div>
 
+    <!--== BOTTOM FLOAT ICON ==-->
+
 
     <!--======== SCRIPT FILES =========-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/materialize.min.js"></script>
+    <script src="js/editor.js"></script>
+
     <script src="js/custom.js"></script>
 </body>
 
