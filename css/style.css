@@ -5821,6 +5821,7 @@ html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:activ
 }
 .main-menu ul li a:hover{
     color: #e23464;
+    text-decoration: none;
 }
 .main-menu ul li a:after{
     content: "";
@@ -9005,14 +9006,15 @@ a.btn-reservation-add {
 }
 .try-custom-package {
     padding: 50px 0;
-    background-image: linear-gradient(258deg, #ec9344, #e67e22);
+    background: linear-gradient(135deg, #fc6076 0%,#ff9a44 100%);
     text-align: center;
 }
 
 .try-custom-package p {
     color: #fff;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 2;
+    font-weight: bold;
 }
 
 .try-custom-package a {
@@ -9203,4 +9205,17 @@ form#contact-form-ar{
     display: flex;
     align-items: flex-start;
 }
-.notes-section ul li:before {content: '';display: inline-block;min-width: 8px;height: 8px;background: #f19733;margin-right: 8px;border-radius: 50%;margin-left: -8px;margin-top: 6px;}
+.notes-section ul li:nth-last-child(1){
+    margin-bottom: 0; 
+}
+.notes-section ul li:before 
+{   content: '';
+    display: inline-block;
+    min-width: 8px;
+    height: 8px;
+    background: #f19733;
+    margin-right: 8px;
+    border-radius: 50%;
+    margin-left: -8px;
+    margin-top: 6px;
+}

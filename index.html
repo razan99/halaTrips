@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/mob.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/kronos.css">
+
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -1157,6 +1159,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/kronos.js"></script>
+
     <script src="js/custom.js"></script>
     <script>
         $(document).ready(function () {
@@ -1176,8 +1180,73 @@
         }
     }
             });
+            $('#kronos1').kronos({
+			periodTo: '#kronos2',
+
+		})
+		$('#kronos2').kronos({
+			periodFrom: '#kronos1'
+		})
         });
     </script>
+    <script>
+
+		// $('.btn-reservation-add').on('click' , function(e) {
+		// 	e.preventDefault();
+		// 	$('.list-dropdown-passengers-inner').append(hh);
+		// })
+
+
+		document.getElementById('btn-reservation-add').onclick = function createInputField() {
+
+			//   var testId = "player";
+			var i = 0;
+			var x = $('.list-persons-count-parent').length + 1;
+			for (i = 0; i < x; i++) {
+				i;
+			}
+
+			$('.list-dropdown-passengers-inner').append(`
+		<div class="list-persons-count-parent" id="list-persons-count-parent-${i}">
+													<h6><span>room ${i}</span> <a class="delete text-danger" data-for="list-persons-count-parent-${i}">X</a></h6>
+														
+													<ul class="list-persons-count">
+														<li>
+															<span>Adults:</span>
+															<div class="counter-add-item">
+																<a class="decrease-btn" href="javascript:;">-</a>
+																<input type="text" value="1">
+																<a class="increase-btn" href="javascript:;">+</a>
+															</div><!-- .counter-add-item end -->
+														</li>
+														<li>
+															<span>Childs:</span>
+															<div class="counter-add-item">
+																<a class="decrease-btn" href="javascript:;">-</a>
+																<input type="text" value="0">
+																<a class="increase-btn" href="javascript:;">+</a>
+															</div><!-- .counter-add-item end -->
+														</li>
+													</ul>
+												</div>
+		`);
+			itemClickCounter();
+			//   input.setAttribute('id', testId + i);
+			//   input.type = 'text';
+			//   input.name = 'player[]';
+			//   var aplayer1 = document.getElementById('input-player-list');
+			//   aplayer1.appendChild(input);
+		}
+		setInterval(function () {
+			$('.delete').on('click', function () {
+				var aa = $(this).data('for');
+
+				$('#' + aa).remove();
+			})
+		}, 1000);
+
+
+	</script>
 </body>
 
 </html>
