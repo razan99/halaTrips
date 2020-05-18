@@ -189,14 +189,14 @@
                                                     <div class="mm1-com mm1-s3">
                                                         <ul>
                                                             <li><a href="hotels-list.html">Hotel Booking</a></li>
-                                                           
+
                                                         </ul>
                                                     </div>
                                                     <div class="mm1-com mm1-s4">
                                                         <ul>
                                                             <li><a href="Special Package.html">Special Package</a></li>
-															<li><a href="custom-package.html">Custom Package</a></li>
-															<li><a href="group-package.html">Group Package</a></li>
+                                                            <li><a href="custom-package.html">Custom Package</a></li>
+                                                            <li><a href="group-package.html">Group Package</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -743,7 +743,8 @@
                             sit amet cursus felis. Etiam venenatis auctor metus, et lacinia elit dignissim non. Aenean
                             auctor semper erat porta dictum.</p>
                         <p>Fusce velit sem, vestibulum ac enim ut, tincidunt pretium augue. Vestibulum purus sapien,
-                            porttitor a porta faucibus, hendrerit eget enim.</p> <a href="/hotels-list.html" class="link-btn">Book your
+                            porttitor a porta faucibus, hendrerit eget enim.</p> <a href="/hotels-list.html"
+                            class="link-btn">Book your
                             hotel now</a>
                     </div>
                 </div>
@@ -889,16 +890,17 @@
                                         <a href="/tour-details.html" class="link-btn">more info</a>
                                     </div>
                                 </div>
-                        </div></div>
+                            </div>
                         </div>
-
                     </div>
-                    <div class="popu-places-home">
-                        <!-- POPULAR PLACES 3 -->
 
-                    </div>
+                </div>
+                <div class="popu-places-home">
+                    <!-- POPULAR PLACES 3 -->
+
                 </div>
             </div>
+        </div>
     </section>
 
 
@@ -1170,43 +1172,43 @@
                 loop: true,
                 autoplay: true,
                 autoplayTimeout: 3000,
-                margin: 10  ,
-                responsive:{
-        0:{
-            items:1,
-        },
-        600:{
-            items:2,
-        }
-    }
+                margin: 10,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 2,
+                    }
+                }
             });
             $('#kronos1').kronos({
-			periodTo: '#kronos2',
+                periodTo: '#kronos2',
 
-		})
-		$('#kronos2').kronos({
-			periodFrom: '#kronos1'
-		})
+            })
+            $('#kronos2').kronos({
+                periodFrom: '#kronos1'
+            })
         });
     </script>
     <script>
 
-		// $('.btn-reservation-add').on('click' , function(e) {
-		// 	e.preventDefault();
-		// 	$('.list-dropdown-passengers-inner').append(hh);
-		// })
+        // $('.btn-reservation-add').on('click' , function(e) {
+        // 	e.preventDefault();
+        // 	$('.list-dropdown-passengers-inner').append(hh);
+        // })
 
 
-		document.getElementById('btn-reservation-add').onclick = function createInputField() {
+        document.getElementById('btn-reservation-add').onclick = function createInputField() {
 
-			//   var testId = "player";
-			var i = 0;
-			var x = $('.list-persons-count-parent').length + 1;
-			for (i = 0; i < x; i++) {
-				i;
-			}
+            //   var testId = "player";
+            var i = 0;
+            var x = $('.list-persons-count-parent').length + 1;
+            for (i = 0; i < x; i++) {
+                i;
+            }
 
-			$('.list-dropdown-passengers-inner').append(`
+            $('.list-dropdown-passengers-inner').append(`
 		<div class="list-persons-count-parent" id="list-persons-count-parent-${i}">
 													<h6><span>room ${i}</span> <a class="delete text-danger" data-for="list-persons-count-parent-${i}">X</a></h6>
 														
@@ -1230,23 +1232,23 @@
 													</ul>
 												</div>
 		`);
-			itemClickCounter();
-			//   input.setAttribute('id', testId + i);
-			//   input.type = 'text';
-			//   input.name = 'player[]';
-			//   var aplayer1 = document.getElementById('input-player-list');
-			//   aplayer1.appendChild(input);
-		}
-		setInterval(function () {
-			$('.delete').on('click', function () {
-				var aa = $(this).data('for');
+            itemClickCounter();
+            //   input.setAttribute('id', testId + i);
+            //   input.type = 'text';
+            //   input.name = 'player[]';
+            //   var aplayer1 = document.getElementById('input-player-list');
+            //   aplayer1.appendChild(input);
+        }
+        setInterval(function () {
+            $('.delete').on('click', function () {
+                var aa = $(this).data('for');
 
-				$('#' + aa).remove();
-			})
-		}, 1000);
+                $('#' + aa).remove();
+            })
+        }, 1000);
 
 
-	</script>
+    </script>
 </body>
 
 </html>

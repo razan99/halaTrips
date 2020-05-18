@@ -136,11 +136,11 @@
                                     </li>
                                     <li><a href="cities.html">Cities</a>
                                     </li>
-                                 
+
                                 </ul>
                             </div>
                         </li>
-                
+
                         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-picture-o"
                                     aria-hidden="true"></i> Sight Seeings</a>
                             <div class="collapsible-body left-sub-menu">
@@ -168,9 +168,9 @@
                             </div>
                         </li>
 
-                
+
                         <li><a href="login.html" target="_blank"><i class="fa fa-sign-in" aria-hidden="true"></i>
-                                 Logout</a>
+                                Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -246,18 +246,21 @@
                                                     <label for="Package-auth">Free Ticket</label>
                                                 </div>
                                             </div>
-                                            <div class="row days-add">
+                                            <div class="row days-add package-days-add">
 
                                                 <div class="input-field col s8">
-                                                    <input id="list-title" type="text" class="validate" name="day"
+                                                    <input id="list-title" type="text" class="validate" name="day[]"
                                                         id="1">
-                                                    <label for="list-title">The path days of tour</label>
+                                                    <label for="list-title">Day 1</label>
+                                                    <a class="delete text-danger" data-for="list-persons-count-parent-1">X</a>
                                                 </div>
-                                                <div class="input-field col s4">
-                                                    <a class="btn-floating btn-large waves-effect waves-light red"><i
+                                                <div class=" col s4">
+                                                    <a id="day-add"
+                                                        class="day-add btn-floating btn-large waves-effect waves-light red"><i
                                                             class="material-icons">add</i></a>
 
                                                 </div>
+
                                             </div>
                                             <div class="row notes_trip" style="margin-bottom: 70px;">
                                                 <div class="col s4">
@@ -474,9 +477,44 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script src="js/editor.js"></script>
+    <!-- <script src="js/editor.js"></script> -->
 
     <script src="js/custom.js"></script>
+    <script>
+
+
+        document.getElementById('day-add').onclick = function createInputField() {
+            console.log('asd');
+
+            //   var testId = "player";
+            var i = 0;
+            var x = $('.package-days-add .input-field').length + 1;
+            for (i = 0; i < x; i++) {
+                i;
+            }
+
+            $('.package-days-add').append(`
+        <div class="input-field col s8" id="package-days-add-${i}">
+            <input id="list-title-${i}" type="text" class="validate" name="day[]" id="${i}">
+            <label for="list-title-${i}">Day ${i}</label>
+            <a class="delete text-danger" data-for="package-days-add-${i}">X</a>
+        </div> 
+    `);
+
+            //   input.setAttribute('id', testId + i);
+            //   input.type = 'text';
+            //   input.name = 'player[]';
+            //   var aplayer1 = document.getElementById('input-player-list');
+            //   aplayer1.appendChild(input);
+        }
+        setInterval(function () {
+            $('.delete').on('click', function () {
+                var aa = $(this).data('for');
+
+                $('#' + aa).remove();
+            })
+        }, 1000);
+    </script>
 </body>
 
 </html>

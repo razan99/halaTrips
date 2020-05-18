@@ -585,6 +585,9 @@
 /* When the browser is between 0px and 481px wide,below css will be applied. 
 /*-------------------------------------------------------*/
  @media screen and (max-width: 480px) {
+    .soc-login ul li{
+        width: 100%;
+    }
     .banner_book_1 ul {
         flex-direction: column;
         
@@ -653,7 +656,7 @@
     }
      .tr-regi-form {
          width: 90%;
-         padding: 30px 25px 30px 25px;
+         padding: 20px 25px 20px 25px;
          margin-top: 100px;
     }
 }

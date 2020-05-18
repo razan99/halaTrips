@@ -5086,6 +5086,8 @@ fieldset, label {
     padding: 0px;
     font-size: 18px !important;
     width:100%;
+    background: #e67e22;
+    color: #fff;
 }
 .tr-regi-form label {
     text-align: left;
@@ -5129,6 +5131,8 @@ fieldset, label {
 .soc-login ul {
     padding: 0px;
     margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .soc-login ul li {
     list-style-type: none;
@@ -5150,7 +5154,10 @@ fieldset, label {
     background: #00aced;
 }
 .soc-login ul li:nth-child(3) a {
-    background: #d34836;
+   padding: 0;
+}
+.soc-login ul li:nth-child(3) a img{
+    max-width: 100%;
 }
 .soc-login ul li a i {
     padding-right: 5px;
