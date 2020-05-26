@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, th {
 .spe-title h2 span {
     color: #e67e22;
     font-size: 44px;
-    font-weight: 600;
+    font-weight: bold;
     
 }
 .spe-title p {
@@ -689,7 +689,7 @@ section.c3 {
    font-size: 15px;
    font-weight: normal;
    line-height: 30px;
-   color: #9a9a9a;
+   color: #666;
    margin-bottom: 15px;
 }
 .to-ho-hotel-con.package ul li{
@@ -709,7 +709,7 @@ align-items: flex-start;
    font-size: 15px;
    font-weight: normal;
    line-height: 30px;
-   color: #777;
+   color: #444;
    margin-bottom: 15px;
    margin-bottom: 0;
    font-weight: 500;
@@ -721,7 +721,7 @@ align-items: flex-start;
 }
 .package-bottom .ho-hot-pri {
    font-size: 38px;
-   font-weight: 600;
+   font-weight: bold;
    color: #e67f31;
    float: none;
 }
@@ -741,7 +741,7 @@ align-items: flex-start;
    margin-right: 20px;
    text-transform: capitalize;
    border-radius: 5px;
-   font-weight: 600;
+   font-weight: bold;
 }
 .to-ho-hotel-con-1 {
     position: relative;
@@ -1467,6 +1467,7 @@ align-items: flex-start;
     overflow: hidden;
     margin-bottom: 30px;
     padding: 20px 15px;
+    background: #fff;
 }
 .p-tesi h4 {
     color: #253d52;
@@ -4214,6 +4215,13 @@ fieldset, label {
     transition: all 0.5s ease;
 }
 .tour-mig-lc-img {
+    height: 160px;
+}
+.tour-mig-lc-img img{
+    
+}
+.first .tour-mig-lc-img{
+    height: auto;
 }
 .tour-mig-like-com:hover img {
     -webkit-transition: all 0.5s ease;
@@ -4225,6 +4233,8 @@ fieldset, label {
 .tour-mig-lc-img img {
     width: 100%;
     border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
 }
 .tour-mig-like-com:before {
     content: '';
@@ -4239,14 +4249,11 @@ fieldset, label {
 .tour-mig-lc-con {
     position: absolute;
     width: 100%;
-    margin-top: -100px;
     padding: 20px 20px 0px 20px;
     display: block;
-    text-align: right;
+    bottom: 20px;
 }
-.tour-mig-lc-con2 {
-    margin-top: -80px;
-}
+
 .tour-mig-lc-con h5 {
     font-size: 26px;
     color: #fff;
@@ -4256,6 +4263,9 @@ fieldset, label {
     text-overflow: ellipsis;
     overflow: hidden;
     margin-bottom: 2px;
+}
+.first .tour-mig-lc-con h5{
+    font-size: 40px;
 }
 .tour-mig-lc-con h6 {
     font-size: 14px;
@@ -8975,7 +8985,10 @@ a.btn-reservation-add {
 .top-filter {
     margin-bottom: 40px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+.top-filter h2{
+    color: #333;
 }
 .kronos-date-body table tbody tr td.disabled button {
     cursor: no-drop;
@@ -9015,6 +9028,7 @@ a.btn-reservation-add {
     padding: 50px 0;
     background: linear-gradient(135deg, #fc6076 0%,#ff9a44 100%);
     text-align: center;
+    position: relative;
 }
 
 .try-custom-package p {
@@ -9196,6 +9210,10 @@ form#contact-form-ar{
     text-align: center;
     margin-bottom: 0;
 }
+.notes-section .card {
+height: 100%;
+}
+
 .notes-section .card-header{
     background-color: rgb(241, 151, 51);
 }
